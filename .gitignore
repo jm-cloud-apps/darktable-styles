@@ -1,0 +1,8 @@
+previews/
+samples/
+*.ARW
+*.arw
+*.xmp
+__pycache__/
+.DS_Store
+.claude/settings.local.json

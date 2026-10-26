@@ -1,0 +1,18 @@
+name = "Kodak Portra 400 v2"
+look = "Airy, low-contrast portrait film with warm skin; best in daylight and golden hour"
+credit = "Ritchie Roesch, Fuji X Weekly (X-Trans V)"
+source = "https://fujixweekly.com/2022/12/16/kodak-portra-400-v2-fujifilm-x-t5-x-trans-v-film-simulation-recipe/"
+ec = "+1/3 to +1"
+
+[fuji]
+sim = "classic_chrome"
+grain = "strong-small"
+cce = "strong"
+ccb = "off"
+wb = 5200
+wb_shift = [1, -6]
+dr = 400
+highlight = 0
+shadow = -2
+color = 2
+clarity = -2

@@ -1,0 +1,17 @@
+name = "Classic Cuban Neg"
+look = "Warm, punchy, gritty street color with soft highlights and strong grain"
+credit = "Osan (@osanbilgi), via FujiRumors 2024"
+source = "https://www.fujirumors.com/?p=128669"
+
+[fuji]
+sim = "classic_negative"
+grain = "strong-large"
+cce = "strong"
+ccb = "strong"
+wb = "auto"
+wb_shift = [4, -5]
+dr = 400
+highlight = -2
+shadow = 1
+color = 4
+clarity = -4

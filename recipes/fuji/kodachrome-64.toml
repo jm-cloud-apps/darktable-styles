@@ -1,0 +1,18 @@
+name = "Kodachrome 64"
+look = "Rich, contrasty slide-film color with crisp detail"
+credit = "Ritchie Roesch, Fuji X Weekly (X-Trans V)"
+source = "https://fujixweekly.com/2022/11/28/kodachrome-64-fujifilm-x-t5-x-trans-v"
+ec = "0 to +2/3"
+
+[fuji]
+sim = "classic_chrome"
+grain = "weak-small"
+cce = "strong"
+ccb = "off"
+wb = "daylight"
+wb_shift = [2, -5]
+dr = 200
+highlight = 0
+shadow = 0.5
+color = 2
+clarity = 3

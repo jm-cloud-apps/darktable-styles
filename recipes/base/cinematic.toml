@@ -1,0 +1,28 @@
+name = "Cinematic"
+look = "Teal and orange grade: teal shadows, warm skin and highlights, slight matte, fine grain"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.08
+chroma_global = -0.05
+saturation_global = 0.05
+shadows_C = 0.10
+shadows_H = 200.0
+highlights_C = 0.05
+highlights_H = 58.0
+global_Y = 0.0015
+
+[darktable.primaries]
+green_hue = 0.08
+green_purity = 0.85
+
+[darktable.grain]
+strength = 8.0
+coarseness = 1200.0
+
+[darktable.vignette]
+scale = 75.0
+falloff_scale = 70.0
+brightness = -0.15
+saturation = 0.0
+autoratio = 1

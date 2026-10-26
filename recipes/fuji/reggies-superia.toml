@@ -1,0 +1,16 @@
+name = "Reggie's Superia"
+look = "Moodier, grainier Fujicolor Superia look for directional light"
+credit = "Reggie Ballesteros, via Fuji X Weekly 2026"
+source = "https://fujixweekly.com/2026/03/12/reggies-superia-a-fujifilm-recipe-for-x-trans-iv-v-cameras/"
+
+[fuji]
+sim = "classic_negative"
+grain = "strong-large"
+cce = "strong"
+ccb = "strong"
+wb = "auto"
+wb_shift = [1, -3]
+dr = "auto"
+highlight = -2
+shadow = -1
+color = 1

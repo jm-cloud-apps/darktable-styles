@@ -1,0 +1,18 @@
+name = "Pacific Blues"
+look = "Coastal Classic Negative: deep cyan blues, punchy shadows, soft highlights"
+credit = "Ritchie Roesch, Fuji X Weekly (X-Trans V)"
+source = "https://fujixweekly.com/2022/12/06/pacific-blues-fujifilm-x-t5-x-trans-v-film-simulation-recipe/"
+ec = "+2/3 to +1"
+
+[fuji]
+sim = "classic_negative"
+grain = "strong-large"
+cce = "strong"
+ccb = "weak"
+wb = 5800
+wb_shift = [1, -3]
+dr = 400
+highlight = -2
+shadow = 3
+color = 4
+clarity = -3

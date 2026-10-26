@@ -1,0 +1,14 @@
+name = "Natural"
+look = "Everyday base for the A7 V + 24-70 GM II: clean true-to-life color, gentle contrast"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.06
+vibrance = 0.10
+chroma_global = 0.04
+saturation_global = 0.08
+saturation_shadows = 0.12
+saturation_highlights = -0.15
+
+[darktable.bilat]
+detail = 0.12

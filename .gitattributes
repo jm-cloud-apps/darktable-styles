@@ -1,0 +1,3 @@
+# generated hex blobs: keep them out of diffs (and AI context)
+styles/*.dtstyle -diff linguist-generated=true
+CATALOG.md linguist-generated=true

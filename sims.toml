@@ -1,0 +1,57 @@
+# Fujifilm film-simulation base looks, approximated with darktable modules.
+# A recipe's [fuji] settings are layered on top of these (tools/build.py).
+# Keys under [<sim>.<op>] are darktable fields from tools/dtstyle.py MODULES.
+#   colorbalancergb hues are degrees: 0 red-pink, 45 orange, 60 amber, 120 green,
+#   180 cyan, 200 teal, 240 blue, 300 magenta.
+#   primaries hues are radians: + rotates red->yellow, green->cyan, blue->magenta.
+
+[provia]
+look = "standard: balanced contrast and color"
+colorbalancergb = { contrast = 0.08, chroma_global = 0.05, saturation_global = 0.04 }
+
+[velvia]
+look = "vivid slide film: high contrast and saturation"
+colorbalancergb = { contrast = 0.18, chroma_global = 0.25, saturation_global = 0.12, shadows_Y = -0.04 }
+primaries = { green_purity = 1.05, blue_purity = 1.08 }
+
+[astia]
+look = "soft slide film: gentle contrast, flattering skin"
+colorbalancergb = { contrast = 0.02, chroma_global = 0.06, saturation_highlights = -0.05, highlights_Y = -0.02 }
+primaries = { red_hue = 0.02 }
+
+[classic_chrome]
+look = "muted documentary color, hard shadows, soft highlights, cyan-leaning blues"
+colorbalancergb = { contrast = 0.10, chroma_global = -0.15, saturation_global = 0.08, saturation_highlights = -0.05, shadows_Y = -0.05, highlights_Y = -0.03, shadows_C = 0.025, shadows_H = 200.0, highlights_C = 0.015, highlights_H = 70.0 }
+primaries = { red_hue = 0.03, red_purity = 0.95, green_hue = -0.07, green_purity = 0.82, blue_hue = -0.08, blue_purity = 0.90 }
+
+[classic_negative]
+look = "Superia-like: hard tonality, teal shadows, yellow highlights, magenta reds, cyan greens"
+colorbalancergb = { contrast = 0.20, chroma_global = -0.10, saturation_global = 0.06, saturation_shadows = 0.05, shadows_Y = -0.04, shadows_C = 0.05, shadows_H = 190.0, highlights_C = 0.03, highlights_H = 80.0 }
+primaries = { red_hue = -0.05, green_hue = 0.10, green_purity = 0.80, blue_hue = -0.05, blue_purity = 0.95 }
+
+[eterna]
+look = "cinema: low contrast, low saturation, open shadows, teal undertone"
+colorbalancergb = { contrast = -0.18, chroma_global = -0.22, shadows_Y = 0.04, highlights_Y = -0.05, shadows_C = 0.03, shadows_H = 195.0, highlights_C = 0.012, highlights_H = 65.0 }
+primaries = { green_hue = 0.05, green_purity = 0.90, blue_hue = -0.04 }
+
+[nostalgic_negative]
+look = "amber highlights, rich soft shadows, 1970s print warmth"
+colorbalancergb = { contrast = 0.04, chroma_global = 0.02, saturation_global = 0.04, saturation_shadows = 0.06, highlights_Y = -0.02, highlights_C = 0.06, highlights_H = 58.0, midtones_C = 0.012, midtones_H = 55.0 }
+primaries = { red_hue = 0.04, green_hue = -0.05, green_purity = 0.90, blue_purity = 0.92 }
+
+[reala_ace]
+look = "faithful negative-film color with firm tonality"
+colorbalancergb = { contrast = 0.14, chroma_global = 0.04, saturation_global = 0.05, shadows_Y = -0.02 }
+primaries = { green_hue = 0.02 }
+
+[acros]
+look = "fine-grain B&W with deep blacks and rich midtones"
+mono = true
+colorbalancergb = { contrast = 0.14, shadows_Y = -0.03, highlights_Y = 0.02 }
+
+# B&W filter = color calibration gray-tab weights in working RGB (Rec.2020), normalized.
+[bw_filters]
+none = [0.30, 0.55, 0.15]
+yellow = [0.40, 0.55, 0.05]
+red = [0.65, 0.33, 0.02]
+green = [0.22, 0.70, 0.08]

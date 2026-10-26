@@ -1,0 +1,17 @@
+name = "Reggie's Portra"
+look = "Soft, warm Portra-style color; the most popular Fuji X Weekly recipe"
+credit = "Reggie Ballesteros, via Fuji X Weekly"
+source = "https://fujixweekly.com/2022/06/11/fujifilm-x-trans-iv-film-simulation-recipe-reggies-portra/"
+ec = "+1/3 to +1"
+
+[fuji]
+sim = "classic_chrome"
+grain = "weak-small"
+cce = "strong"
+ccb = "weak"
+wb = "auto"
+wb_shift = [2, -4]
+dr = "auto"
+highlight = -1
+shadow = -1
+color = 2

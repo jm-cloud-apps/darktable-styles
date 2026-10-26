@@ -1,0 +1,19 @@
+name = "Vivid"
+look = "Travel and landscape: deeper contrast, rich blues and greens, crisp micro-detail"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.16
+vibrance = 0.20
+chroma_global = 0.12
+saturation_global = 0.12
+saturation_shadows = 0.20
+saturation_highlights = -0.10
+highlights_Y = -0.04
+
+[darktable.primaries]
+green_purity = 1.04
+blue_purity = 1.06
+
+[darktable.bilat]
+detail = 0.25

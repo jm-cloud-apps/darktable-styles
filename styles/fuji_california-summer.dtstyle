@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<darktable_style version="1.0">
+<info><name>A7V · Fuji · California Summer</name><description>Sun-drenched, very warm Nostalgic Neg color. Nostalgic Negative · Grain weak-small · CCE strong · CCB weak · WB 6700K R-1 B-6 · DR400 · H-2 S-1 · Color +4 · Clarity -4. Recipe: Ritchie Roesch, Fuji X Weekly (X-Trans V). Typical exposure comp. +2/3 to +1 1/3.</description></info>
+<style>
+<plugin><num>0</num><module>1</module><operation>primaries</operation><op_params>5a6c993f9d109e3d0ad7233d0000803fcdcc4cbd6666663f00000000c74b773f</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>1</num><module>5</module><operation>colorbalancergb</operation><op_params>0ad7a33d0000000000000000a5134a3da69b443c00005c42cdcc4cbe8fc2753d000068420000000000000000000000000000803f000000000000803f0000000000000000cdcc4c3e000000000ad7233e00000000000000008fc2753d000000000000000000000000000000000000000091ed3c3e0000000091ed3c3e0ad7233d01000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>2</num><module>3</module><operation>bilat</operation><op_params>010000000000003f0000003fcdcc4cbe0000003f</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>3</num><module>2</module><operation>grain</operation><op_params>0200000004189640000020410000c842</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+</style>
+</darktable_style>

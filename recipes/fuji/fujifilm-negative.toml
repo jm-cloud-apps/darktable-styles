@@ -1,0 +1,18 @@
+name = "Fujifilm Negative"
+look = "Clean, true-to-life Fujicolor negative rendering"
+credit = "Ritchie Roesch, Fuji X Weekly (X-Trans V)"
+source = "https://fujixweekly.com/2024/10/31/fujifilm-negative-fujifilm-x-t5-x-trans-v-film-simulation-recipe/"
+ec = "+1/3 to +1"
+
+[fuji]
+sim = "reala_ace"
+grain = "weak-small"
+cce = "strong"
+ccb = "off"
+wb = 5000
+wb_shift = [0, -2]
+dr = 400
+highlight = -1
+shadow = -0.5
+color = 2
+clarity = -2

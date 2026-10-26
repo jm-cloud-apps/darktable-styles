@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<darktable_style version="1.0">
+<info><name>A7V · Base · Cinematic</name><description>Teal and orange grade: teal shadows, warm skin and highlights, slight matte, fine grain. Recipe: House recipe (this repo).</description></info>
+<style>
+<plugin><num>0</num><module>1</module><operation>primaries</operation><op_params>0000000000000000000000000000803f0ad7a33d9a99593f000000000000803f</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>1</num><module>5</module><operation>colorbalancergb</operation><op_params>00000000cdcccc3d0000484300000000000000000000000000000000cdcc4c3d00006842a69bc43a00000000000000000000803f000000000000803f0000000000000000cdcc4cbd00000000cdcc4c3d000000000000000000000000000000000000000000000000000000000000000091ed3c3e0000000091ed3c3e0ad7a33d01000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>2</num><module>2</module><operation>grain</operation><op_params>02000000d11cb440000000410000c842</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>3</num><module>4</module><operation>vignette</operation><op_params>0000964200008c429a9919be000000000000000000000000010000000000803f0000803f0000000001000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+</style>
+</darktable_style>

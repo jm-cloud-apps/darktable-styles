@@ -1,0 +1,23 @@
+name = "Faded Print"
+look = "Aged 1970s drugstore print: matte lifted blacks, warm cast, soft contrast, light vignette"
+credit = "House recipe (this repo)"
+
+[fuji]
+sim = "nostalgic_negative"
+grain = "strong-small"
+wb = "auto"
+wb_shift = [2, -4]
+highlight = -1
+shadow = -2
+color = -1
+
+[darktable.colorbalancergb]
+global_Y = 0.0025    # matte black lift (scene-linear offset before the tone mapper)
+contrast = -0.06
+
+[darktable.vignette]
+scale = 70.0
+falloff_scale = 80.0
+brightness = -0.2
+saturation = -0.1
+autoratio = 1

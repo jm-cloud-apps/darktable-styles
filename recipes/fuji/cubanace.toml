@@ -1,0 +1,17 @@
+name = "CubanAce"
+look = "Cuban warmth on a cleaner, more faithful Reala Ace base"
+credit = "Osan (@osanbilgi), via FujiRumors 2024"
+source = "https://www.fujirumors.com/?p=128669"
+
+[fuji]
+sim = "reala_ace"
+grain = "strong-large"
+cce = "strong"
+ccb = "strong"
+wb = "auto"
+wb_shift = [4, -5]
+dr = 400
+highlight = -2
+shadow = 1.5
+color = 1
+clarity = -4

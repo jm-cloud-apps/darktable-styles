@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<darktable_style version="1.0">
+<info><name>A7V · Fuji · Classic Cuban Neg</name><description>Warm, punchy, gritty street color with soft highlights and strong grain. Classic Negative · Grain strong-large · CCE strong · CCB strong · WB auto R+4 B-5 · DR400 · H-2 S+1 · Color +4 · Clarity -4. Recipe: Osan (@osanbilgi), via FujiRumors 2024.</description></info>
+<style>
+<plugin><num>0</num><module>1</module><operation>primaries</operation><op_params>14b9203f2b5d5b3dcdcc4cbd0000803fcdcccc3dcdcc4c3fcdcc4cbd8fc2853f</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>1</num><module>5</module><operation>colorbalancergb</operation><op_params>8fc2f5bdcdcc4c3d00003e4336e79a3d0000000000000000ec5138be8fc2f53c0000a0420000000000000000000000000000803f000000000000803f00000000000000000ad7a33d00000000ec51383e0000000000000000cdcc4c3d000000000000000000000000000000000000000091ed3c3e0000000091ed3c3ecdcc4c3e01000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>2</num><module>3</module><operation>bilat</operation><op_params>010000000000003f0000003fcdcc4cbe0000003f</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>3</num><module>2</module><operation>grain</operation><op_params>0200000004181641000090410000c842</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+</style>
+</darktable_style>

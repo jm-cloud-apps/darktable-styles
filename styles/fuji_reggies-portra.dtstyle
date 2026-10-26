@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<darktable_style version="1.0">
+<info><name>A7V · Fuji · Reggie's Portra</name><description>Soft, warm Portra-style color; the most popular Fuji X Weekly recipe. Classic Chrome · Grain weak-small · CCE strong · CCB weak · WB auto R+2 B-4 · DRauto · H-1 S-1 · Color +2. Recipe: Reggie Ballesteros, via Fuji X Weekly. Typical exposure comp. +1/3 to +1.</description></info>
+<style>
+<plugin><num>0</num><module>1</module><operation>primaries</operation><op_params>448c433fc505153d8fc2f53c3333733f295c8fbd85eb513f0ad7a3bd85eb713f</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>1</num><module>5</module><operation>colorbalancergb</operation><op_params>8fc2f53ccdcccc3c000048432981d23c0000000000000000cdccccbd8fc2753c00008c420000000000000000000000000000803f000000000000803f00000000000000008fc275bd00000000cdcc4c3ecdcc4cbd0000000000000000000000000000000000000000000000000000000091ed3c3e0000000091ed3c3ecdcccc3d01000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>2</num><module>2</module><operation>grain</operation><op_params>0200000004189640000020410000c842</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+</style>
+</darktable_style>

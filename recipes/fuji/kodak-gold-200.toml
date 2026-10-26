@@ -1,0 +1,18 @@
+name = "Kodak Gold 200"
+look = "Golden, nostalgic consumer-film warmth"
+credit = "Ritchie Roesch, Fuji X Weekly (X-Trans V)"
+source = "https://fujixweekly.com/2023/10/24/kodak-gold-200-fujifilm-x-t5-x-trans-v-film-simulation-recipe/"
+ec = "+2/3 to +1"
+
+[fuji]
+sim = "classic_chrome"
+grain = "strong-small"
+cce = "weak"
+ccb = "off"
+wb = "daylight"
+wb_shift = [4, -5]
+dr = 400
+highlight = -1.5
+shadow = 0.5
+color = 3
+clarity = -2

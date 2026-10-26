@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<darktable_style version="1.0">
+<info><name>A7V · Fuji · Kodak Gold 200</name><description>Golden, nostalgic consumer-film warmth. Classic Chrome · Grain strong-small · CCE weak · WB daylight R+4 B-5 · DR400 · H-1.5 S+0.5 · Color +3 · Clarity -2. Recipe: Ritchie Roesch, Fuji X Weekly (X-Trans V). Typical exposure comp. +2/3 to +1.</description></info>
+<style>
+<plugin><num>0</num><module>1</module><operation>primaries</operation><op_params>14b9203f2b5d5b3d8fc2f53c3333733f295c8fbd85eb513f0ad7a3bd6666663f</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>1</num><module>5</module><operation>colorbalancergb</operation><op_params>ec51b8bdcdcccc3c00004843f9358d3d0000000000000000333333be8fc2753c00008c420000000000000000000000000000803f000000000000803f00000000000000008fc275bc00000000295c0f3ecdcc4cbd0000000000000000000000000000000000000000000000000000000091ed3c3e0000000091ed3c3ecdcccc3d01000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>2</num><module>3</module><operation>bilat</operation><op_params>010000000000003f0000003fcdccccbd0000003f</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>3</num><module>2</module><operation>grain</operation><op_params>0200000004189640000090410000c842</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+</style>
+</darktable_style>

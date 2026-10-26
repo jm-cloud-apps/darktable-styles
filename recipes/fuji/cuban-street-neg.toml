@@ -1,0 +1,17 @@
+name = "Cuban Street Neg"
+look = "Subtler, cooler Cuban variant that is easier on skin tones"
+credit = "Osan (@osanbilgi), via FujiRumors 2024"
+source = "https://www.fujirumors.com/?p=128669"
+
+[fuji]
+sim = "classic_negative"
+grain = "strong-large"
+cce = "off"
+ccb = "strong"
+wb = "auto"
+wb_shift = [3, 5]
+dr = 400
+highlight = -2
+shadow = 1.5
+color = -2
+clarity = -4

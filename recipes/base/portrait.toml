@@ -1,0 +1,18 @@
+name = "Portrait"
+look = "People: soft contrast, warm even skin, gentler texture than the GM II renders natively"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = -0.04
+vibrance = 0.05
+chroma_global = -0.03
+saturation_global = 0.04
+saturation_highlights = -0.12
+highlights_C = 0.025
+highlights_H = 55.0
+
+[darktable.primaries]
+red_hue = 0.02
+
+[darktable.bilat]
+detail = -0.06

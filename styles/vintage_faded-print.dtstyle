@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<darktable_style version="1.0">
+<info><name>A7V · Vintage · Faded Print</name><description>Aged 1970s drugstore print: matte lifted blacks, warm cast, soft contrast, light vignette. Nostalgic Negative · Grain strong-small · WB auto R+2 B-4 · H-1 S-2 · Color -1. Recipe: House recipe (this repo).</description></info>
+<style>
+<plugin><num>0</num><module>1</module><operation>primaries</operation><op_params>448c433fc505153d0ad7233d0000803fcdcc4cbd6666663f000000001f856b3f</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>1</num><module>5</module><operation>colorbalancergb</operation><op_params>0ad7233e0000000000000000205e423ba69b443c00005c42ec51b8bd8fc2753d000068420ad7233b00000000000000000000803f000000000000803f0000000000000000cdccccbc000000000ad7233d00000000000000008fc2753d000000000000000000000000000000000000000091ed3c3e0000000091ed3c3e8fc275bd01000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>2</num><module>2</module><operation>grain</operation><op_params>0200000004189640000090410000c842</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>3</num><module>4</module><operation>vignette</operation><op_params>00008c420000a042cdcc4cbecdccccbd0000000000000000010000000000803f0000803f0000000001000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+</style>
+</darktable_style>

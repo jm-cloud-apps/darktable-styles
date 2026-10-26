@@ -1,0 +1,11 @@
+name = "Mono"
+look = "Neutral rich B&W with a yellow filter: slightly darker skies, clean skin, fine grain"
+credit = "House recipe (this repo)"
+
+[fuji]
+sim = "acros"
+filter = "yellow"
+grain = "weak-small"
+highlight = 1
+shadow = 1
+clarity = 2

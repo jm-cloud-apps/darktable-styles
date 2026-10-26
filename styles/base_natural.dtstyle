@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<darktable_style version="1.0">
+<info><name>A7V · Base · Natural</name><description>Everyday base for the A7 V + 24-70 GM II: clean true-to-life color, gentle contrast. Recipe: House recipe (this repo).</description></info>
+<style>
+<plugin><num>0</num><module>5</module><operation>colorbalancergb</operation><op_params>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000803f000000000000803f00000000000000000ad7233d000000000ad7a33d9a9919be000000008fc2f53d000000000000000000000000000000000000000091ed3c3ecdcccc3d91ed3c3e8fc2753d01000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>1</num><module>3</module><operation>bilat</operation><op_params>010000000000003f0000003f8fc2f53d0000003f</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+</style>
+</darktable_style>
