@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<darktable_style version="1.0">
+<info><name>A7V · Portugal · Algarve Coast</name><description>Algarve summer: turquoise sea, golden limestone cliffs, deep blue sky, warm sun with protected highlights. Recipe: House recipe (this repo).</description></info>
+<style>
+<plugin><num>0</num><module>5</module><operation>colorbalancergb</operation><op_params>000000000000000000000000aed8433c00000000000000000ad723bd8fc2f53c000078420000000000000000000000000000803f000000000000803f00000000000000000ad7a33d0000000000000000000000000000000000000000000000000000000000000000000000000000000091ed3c3e0000000091ed3c3e8fc2f53d01000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>1</num><module>4</module><operation>colorequal</operation><op_params>cdcccc3d0000803f000000000000803f0000c03f0000803f010000000000803f3333933fcdcc8c3f0000803f6666a63f3333933f0000803f0000803f0000000000000000000080c0000000000000c0c00000000000000000000000000000803f0000803f0000803f0000803f6666863f9a99593f0000803f0000803f00000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+</style>
+</darktable_style>

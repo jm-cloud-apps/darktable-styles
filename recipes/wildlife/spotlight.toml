@@ -1,0 +1,31 @@
+name = "Spotlight"
+look = "Low-key animal portrait: the subject glows out of a darkened, muted background; rich jewel color, fine fur and feather detail, deep vignette"
+credit = "House recipe (this repo)"
+ec = "-1/3 to -2/3"
+
+[darktable.colorbalancergb]
+contrast = 0.22
+shadows_Y = -0.12
+highlights_Y = -0.02
+vibrance = -0.30            # mutes dull background color more than vivid plumage
+chroma_global = 0.04
+saturation_global = 0.08
+saturation_shadows = -0.20
+
+[darktable.colorequal]
+threshold = 0.03
+sat_cyan = 1.10
+sat_blue = 1.04
+sat_lavender = 1.06
+sat_green = 1.06
+sat_orange = 1.05
+
+[darktable.bilat]
+detail = 0.25
+
+[darktable.vignette]
+scale = 45.0
+falloff_scale = 90.0
+brightness = -0.50
+saturation = -0.35
+autoratio = 1

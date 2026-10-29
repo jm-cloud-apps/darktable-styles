@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<darktable_style version="1.0">
+<info><name>A7V · Horror · Bleach Bypass</name><description>Se7en-style bleach bypass: silver-retained hard contrast, drained color, grimy yellow-green cast, gritty. Recipe: House recipe (this repo).</description></info>
+<style>
+<plugin><num>0</num><module>5</module><operation>colorbalancergb</operation><op_params>cdcc4cbd0ad7a33c0000204352de90bb295c0f3d0000be420ad7233d00000000000000000000000000000000000000000000803f000000000000803f00000000000000006666e6be00000000cdcccc3d000000000000000000000000000000000000000000000000000000000000000091ed3c3e0000000091ed3c3e9a99993e01000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>1</num><module>3</module><operation>bilat</operation><op_params>010000000000003f0000003f9a99993e0000003f</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>2</num><module>2</module><operation>grain</operation><op_params>020000006d26f040000080410000c842</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>3</num><module>4</module><operation>vignette</operation><op_params>00008c4200008c42000080becdcc4cbe0000000000000000010000000000803f0000803f0000000001000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+</style>
+</darktable_style>

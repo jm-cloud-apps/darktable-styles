@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<darktable_style version="1.0">
+<info><name>A7V · Food · Bright and Airy</name><description>Cafe and brunch: light open shadows, clean bright whites, soft pastel color with appetizing warmth, gentle glow. Recipe: House recipe (this repo). Typical exposure comp. +1/3 to +1.</description></info>
+<style>
+<plugin><num>0</num><module>5</module><operation>colorbalancergb</operation><op_params>8fc2753d0000000000000000b0bea6bc6f12033c000070420ad7233d00000000000000000000000000000000000000000000803f000000000000803f00000000000000000ad723bd000000008fc275bd000000000000000000000000000000000000000000000000000000000000000091ed3c3e8fc2753d91ed3c3e0ad723bd01000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>1</num><module>4</module><operation>colorequal</operation><op_params>0ad7233d0000803f000000000000803f0000c03f0000803f01000000b81e853fb81e853f0000803f0000803f6666663fae47613f6666663f0000803f00000040000000000000000000000000000000000000000000000000000000000000803fb81e853fb81e853f0000803f0000803f0000803f0000803f0000803f00000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>2</num><module>1</module><operation>soften</operation><op_params>000020420000c842cdcc4c3e00000041</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+</style>
+</darktable_style>

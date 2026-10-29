@@ -1,0 +1,40 @@
+name = "Dark and Moody"
+look = "Low-key food styling: shadows falling to near-black, rich warm food tones, muted slate background, tactile texture"
+credit = "House recipe (this repo)"
+ec = "-1/3 to -1"
+
+[darktable.colorbalancergb]
+contrast = 0.18
+shadows_Y = -0.08
+highlights_Y = -0.03
+chroma_global = -0.06
+saturation_global = 0.08     # dense, rich color where it remains
+saturation_shadows = -0.15   # backgrounds lose their color, the food keeps it
+shadows_C = 0.015
+shadows_H = 220.0      # cool slate
+highlights_C = 0.025
+highlights_H = 65.0    # warm light on the food
+
+[darktable.colorequal]
+threshold = 0.04
+sat_red = 1.10
+hue_red = 2.0
+bright_red = 0.94
+sat_orange = 1.06
+hue_yellow = -4.0      # herbs and leaves toward deep olive
+bright_yellow = 0.96
+hue_green = -4.0
+bright_green = 0.92
+sat_cyan = 0.80
+sat_blue = 0.80
+sat_lavender = 0.85
+
+[darktable.bilat]
+detail = 0.22
+
+[darktable.vignette]
+scale = 60.0
+falloff_scale = 80.0
+brightness = -0.30
+saturation = -0.15
+autoratio = 1

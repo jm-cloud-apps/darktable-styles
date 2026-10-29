@@ -1,0 +1,36 @@
+name = "Night Vision"
+look = "Found-footage night vision: phosphor-green monochrome, blooming highlights, heavy sensor noise, dark tube edges"
+credit = "House recipe (this repo)"
+
+[darktable.channelmixerrgb]   # B&W: image intensifiers favor red / near-IR
+grey = [0.50, 0.40, 0.10, 0.0]
+illuminant = 0
+adaptation = 4
+x = 0.3457
+y = 0.3585
+gamut = 0.0
+
+[darktable.colorbalancergb]
+contrast = 0.15
+shadows_C = 0.10
+shadows_H = 135.0      # phosphor green
+midtones_C = 0.12
+midtones_H = 135.0
+highlights_C = 0.06
+highlights_H = 120.0   # yellow-green hot spots
+
+[darktable.bloom]
+size = 15.0
+threshold = 85.0
+strength = 30.0
+
+[darktable.grain]
+strength = 32.0
+coarseness = 2600.0
+
+[darktable.vignette]
+scale = 55.0
+falloff_scale = 45.0
+brightness = -0.80
+saturation = 0.0
+autoratio = 1

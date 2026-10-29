@@ -1,0 +1,35 @@
+name = "Lisbon Film Street"
+look = "Lisbon street portraits on film: coral and ochre walls, muted slate-blue doors, warm skin, soft creamy highlights, gently lifted warm blacks, strong grain"
+credit = "House recipe matched to @morganitogram's Lisbon photos (Instagram)"
+source = "https://www.instagram.com/morganitogram/"
+
+[darktable.colorbalancergb]
+global_Y = 0.003       # soft, slightly open blacks
+global_C = 0.0004
+global_H = 40.0        # warm
+highlights_Y = -0.10   # creamy roll-off, no hard whites
+saturation_global = 0.06   # dense film color
+shadows_C = 0.01
+shadows_H = 40.0
+
+[darktable.colorequal]
+threshold = 0.04
+sat_red = 1.08
+hue_red = 6.0          # coral
+bright_red = 0.96
+sat_orange = 1.05      # ochre walls, warm skin
+hue_orange = -3.0
+bright_orange = 0.95
+sat_yellow = 0.90
+hue_yellow = 3.0
+sat_green = 0.85
+hue_green = 10.0       # painted greens drift teal
+sat_cyan = 0.90
+sat_blue = 0.86        # slate-blue doors
+hue_blue = -4.0
+sat_lavender = 0.86
+hue_lavender = -8.0
+
+[darktable.grain]
+strength = 20.0
+coarseness = 1500.0

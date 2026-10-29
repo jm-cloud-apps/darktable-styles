@@ -1,0 +1,35 @@
+name = "Peacock"
+look = "Iridescent plumage: luminous cobalt neck, emerald and teal eye-spots, burnished bronze, crisp feather detail; made for peacocks and bright birds"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.12
+chroma_global = 0.04
+saturation_global = 0.06   # jewel-tone density
+highlights_Y = -0.03       # keep the iridescent sheen
+
+[darktable.colorequal]
+threshold = 0.03       # teal and green plumage is low-chroma to this module; let it act fully
+sat_lavender = 1.08    # cobalt neck (sits between the blue and lavender nodes)
+hue_lavender = -4.0    # violet toward peacock blue
+bright_lavender = 0.95 # deep cobalt instead of electric blue
+sat_blue = 1.10
+bright_blue = 0.97
+sat_cyan = 1.25        # turquoise eye-spot rings
+sat_green = 1.15       # breast scales and train
+hue_green = 6.0        # toward emerald
+sat_yellow = 1.04
+hue_yellow = 5.0       # lime toward emerald
+sat_orange = 1.12      # bronze and gold
+hue_orange = -3.0      # toward copper
+bright_orange = 0.98
+
+[darktable.bilat]
+detail = 0.28          # feather barbs
+
+[darktable.vignette]
+scale = 75.0
+falloff_scale = 70.0
+brightness = -0.12
+saturation = -0.05
+autoratio = 1

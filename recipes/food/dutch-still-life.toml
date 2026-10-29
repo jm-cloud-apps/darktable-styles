@@ -1,0 +1,53 @@
+name = "Dutch Still Life"
+look = "Dutch Golden Age still life: warm umber darkness, single-window golden light, deep wine reds, olive greens, painterly softness, heavy vignette"
+credit = "House recipe (this repo)"
+ec = "-2/3 to -1"
+
+[darktable.colorbalancergb]
+contrast = 0.22
+shadows_Y = -0.10
+highlights_Y = -0.04
+chroma_global = -0.12
+saturation_global = 0.10
+shadows_C = 0.035
+shadows_H = 42.0       # umber
+midtones_C = 0.025
+midtones_H = 52.0      # amber
+highlights_C = 0.035
+highlights_H = 65.0    # golden window light
+
+[darktable.colorequal]
+threshold = 0.04
+sat_red = 1.15         # wine, cherries, lobster
+bright_red = 0.88
+hue_red = -2.0
+sat_orange = 1.05
+sat_yellow = 0.95
+hue_yellow = -8.0      # leaves toward ochre-olive
+sat_green = 0.80
+hue_green = -10.0
+bright_green = 0.90
+sat_cyan = 0.60
+sat_blue = 0.60
+sat_lavender = 0.70
+sat_magenta = 0.90
+
+[darktable.soften]     # painterly softness
+size = 50.0
+saturation = 80.0
+brightness = 0.15
+amount = 12.0
+
+[darktable.bilat]
+detail = 0.10
+
+[darktable.grain]
+strength = 6.0
+coarseness = 1200.0
+
+[darktable.vignette]
+scale = 50.0
+falloff_scale = 90.0
+brightness = -0.50
+saturation = -0.30
+autoratio = 1

@@ -1,0 +1,33 @@
+name = "Northern Kingdom"
+look = "Bleak northern realm: cold steel-grey palette, rusty earth tones, deep blacks, gritty texture"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.20
+chroma_global = -0.35
+saturation_shadows = -0.08
+shadows_Y = -0.06
+shadows_C = 0.045
+shadows_H = 215.0      # steel blue
+highlights_C = 0.015
+highlights_H = 70.0    # pale overcast warmth
+
+[darktable.primaries]
+red_hue = 0.05         # reds toward rust
+red_purity = 0.85
+green_hue = -0.08
+green_purity = 0.65
+
+[darktable.bilat]
+detail = 0.20          # grit (= Clarity +4)
+
+[darktable.grain]
+strength = 14.0
+coarseness = 1600.0
+
+[darktable.vignette]
+scale = 65.0
+falloff_scale = 75.0
+brightness = -0.25
+saturation = -0.20
+autoratio = 1

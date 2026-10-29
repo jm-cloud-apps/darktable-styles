@@ -1,0 +1,26 @@
+name = "Dorne"
+look = "Game of Thrones Dorne: sun-baked Moorish palace, saturated golds and terracotta, lush gardens, warm turquoise pools"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.12
+chroma_global = 0.10
+saturation_global = 0.06
+highlights_Y = -0.04
+midtones_C = 0.03
+midtones_H = 50.0
+highlights_C = 0.07
+highlights_H = 55.0
+
+[darktable.colorequal]
+sat_orange = 1.20
+hue_orange = -3.0      # terracotta
+sat_yellow = 1.15
+hue_yellow = -5.0      # gold
+sat_green = 1.10       # gardens
+sat_cyan = 1.15        # pools
+bright_blue = 0.90
+
+[darktable.grain]
+strength = 6.0
+coarseness = 1000.0

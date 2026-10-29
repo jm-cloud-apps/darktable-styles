@@ -1,0 +1,26 @@
+name = "International Orange"
+look = "Red suspension bridges like Lisbon's 25 de Abril and the Golden Gate: rich vermilion steel, deep clean blue sky and river, crisp cables"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.12
+chroma_global = 0.05
+saturation_global = 0.05
+highlights_Y = -0.03
+
+[darktable.colorequal]
+threshold = 0.04
+sat_red = 1.18         # the bridge paint
+hue_red = 3.0          # toward vermilion
+bright_red = 0.94      # dense paint, not coral
+sat_orange = 1.06
+sat_blue = 1.15        # sky
+bright_blue = 0.92
+sat_lavender = 1.06
+sat_cyan = 1.08        # river
+sat_green = 0.90       # quieter hills so the red leads
+sat_yellow = 0.95
+sat_magenta = 0.90
+
+[darktable.bilat]
+detail = 0.20

@@ -1,0 +1,26 @@
+name = "Long Exposure Mono"
+look = "Fine-art long-exposure B&W: near-black red-filter skies, silky silver water, luminous steel and stone, deep clean blacks"
+credit = "House recipe (this repo)"
+
+[darktable.channelmixerrgb]   # B&W: deep red filter, blue pulled under
+grey = [0.95, 0.25, -0.20, 0.0]
+illuminant = 0
+adaptation = 4
+x = 0.3457
+y = 0.3585
+gamut = 0.0
+
+[darktable.colorbalancergb]
+contrast = 0.26
+shadows_Y = -0.06
+highlights_Y = 0.04
+
+[darktable.bilat]
+detail = 0.22
+
+[darktable.vignette]
+scale = 70.0
+falloff_scale = 70.0
+brightness = -0.20
+saturation = 0.0
+autoratio = 1

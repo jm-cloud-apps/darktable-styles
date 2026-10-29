@@ -4,11 +4,12 @@ Film-recipe styles for darktable 5.6.2, generated from small TOML recipes. Pytho
 
 ## Map (read top-down, stop when you have enough)
 - `CATALOG.md`: generated index of every style. Read this instead of listing/opening recipes.
-- `recipes/<base|fuji|vintage>/<slug>.toml`: **source of truth**, one style per file. Schema and add-a-recipe steps: `recipes/README.md`.
+- `recipes/<base|fuji|vintage|medieval|horror|castle|portugal|food|bridge|wildlife>/<slug>.toml`: **source of truth**, one style per file. Schema, add-a-recipe steps and colorequal hue-node gotchas: `recipes/README.md`.
 - `sims.toml`: Fuji film-simulation base looks shared by recipes.
 - `tools/build.py`: Fuji settings → darktable translation (tuning constants at top), writes outputs.
 - `tools/dtstyle.py`: binary param layouts pinned to darktable 5.6.2, plus a `show` decoder.
 - `tools/verify.py`: renders every style through real darktable-cli in a throwaway config.
+- `tools/install.py`: syncs styles into the user's darktable data.db (darktable must be closed; backs up first).
 - `styles/*.dtstyle`, `CATALOG.md`: **generated**. Never hand-edit. Don't read `styles/` (hex blobs); use `--show`.
 - `previews/`: verify output (gitignored). The JPEGs are viewable when judging a look.
 
@@ -17,8 +18,9 @@ Film-recipe styles for darktable 5.6.2, generated from small TOML recipes. Pytho
 python3 tools/build.py                      # regenerate styles/ + CATALOG.md (instant)
 python3 tools/build.py --show <slug>        # computed darktable params for one recipe
 python3 tools/build.py --check              # exit 1 if outputs are stale
-python3 tools/verify.py --only <substr>     # ~6 s/style; all 21 ≈ 2 min. --image <raw> for real previews
+python3 tools/verify.py --only <substr>     # ~6 s/style; everything ≈ 7 min. --image <raw> for real previews
 python3 tools/dtstyle.py show <file>        # decode any .dtstyle (user exports, downloaded packs)
+python3 tools/install.py --dry-run          # what a sync into the user's darktable would change (safe while open)
 ```
 
 ## Rules

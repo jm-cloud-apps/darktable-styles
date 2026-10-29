@@ -1,0 +1,22 @@
+name = "Stone and Sky"
+look = "Sunlit castle walls: warm textured stone, deep polarizer-blue sky, protected cloud highlights, crisp detail"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.12
+chroma_global = 0.05
+highlights_Y = -0.04   # keep cloud and limestone detail
+highlights_C = 0.02
+highlights_H = 60.0
+
+[darktable.colorequal]
+sat_blue = 1.20
+bright_blue = 0.80     # polarizer-deep sky
+sat_cyan = 1.10
+bright_cyan = 0.90
+sat_orange = 1.10      # sandstone and granite warmth
+bright_orange = 1.05
+sat_yellow = 1.05
+
+[darktable.bilat]
+detail = 0.25

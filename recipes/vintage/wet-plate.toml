@@ -1,0 +1,36 @@
+name = "Wet Plate"
+look = "1860s tintype: blue-sensitive B&W (dark reds and skin, bright skies), chocolate shadows, cream highlights, heavy vignette"
+credit = "House recipe (this repo)"
+
+[darktable.channelmixerrgb]   # B&W: blue-only collodion emulsion
+grey = [0.0, 0.2, 0.8, 0.0]
+illuminant = 0
+adaptation = 4
+x = 0.3457
+y = 0.3585
+gamut = 0.0
+
+[darktable.colorbalancergb]
+contrast = 0.22
+highlights_Y = 0.04
+shadows_C = 0.05
+shadows_H = 40.0       # chocolate
+highlights_C = 0.025
+highlights_H = 75.0    # cream
+
+[darktable.soften]     # Petzval-lens glow
+size = 40.0
+saturation = 100.0
+brightness = 0.2
+amount = 18.0
+
+[darktable.grain]
+strength = 20.0
+coarseness = 2200.0
+
+[darktable.vignette]
+scale = 50.0
+falloff_scale = 90.0
+brightness = -0.60
+saturation = 0.0
+autoratio = 1

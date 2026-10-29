@@ -1,0 +1,50 @@
+name = "Haunted Chapel"
+look = "The Nun / Conjuring church: damp green-grey stone, black naves, candle-amber glow through incense haze, surviving crimson and gold, corpse-pale skin"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.22
+chroma_global = -0.35
+shadows_Y = -0.07      # black naves
+highlights_Y = -0.05   # low-key: light only where candles and windows are
+shadows_C = 0.05
+shadows_H = 165.0      # damp, mold green-teal
+midtones_C = 0.015
+midtones_H = 150.0
+highlights_C = 0.06
+highlights_H = 50.0    # candlelight
+
+[darktable.colorequal]
+sat_red = 1.55         # altar cloth, stained glass
+bright_red = 0.80
+hue_red = -4.0         # toward crimson
+sat_yellow = 1.15      # candle and gilt
+sat_orange = 0.70      # pallid skin
+bright_orange = 1.05
+sat_green = 0.60
+sat_cyan = 0.80
+
+[darktable.bloom]      # candle and window halos
+size = 20.0
+threshold = 92.0
+strength = 15.0
+
+[darktable.soften]     # incense haze
+size = 70.0
+saturation = 60.0
+brightness = 0.1
+amount = 10.0
+
+[darktable.bilat]
+detail = 0.15          # cracked stone
+
+[darktable.grain]
+strength = 18.0
+coarseness = 1800.0
+
+[darktable.vignette]
+scale = 50.0
+falloff_scale = 85.0
+brightness = -0.55
+saturation = -0.30
+autoratio = 1

@@ -1,0 +1,28 @@
+name = "Bleach Bypass"
+look = "Se7en-style bleach bypass: silver-retained hard contrast, drained color, grimy yellow-green cast, gritty"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.30
+chroma_global = -0.45
+saturation_global = 0.10   # what color is left turns dense and dark
+shadows_Y = -0.05
+highlights_Y = 0.04
+shadows_C = 0.02
+shadows_H = 160.0
+midtones_C = 0.035
+midtones_H = 95.0          # grimy yellow-green
+
+[darktable.bilat]
+detail = 0.30
+
+[darktable.grain]
+strength = 16.0
+coarseness = 1600.0
+
+[darktable.vignette]
+scale = 70.0
+falloff_scale = 70.0
+brightness = -0.25
+saturation = -0.20
+autoratio = 1

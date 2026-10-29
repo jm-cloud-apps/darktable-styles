@@ -1,0 +1,20 @@
+name = "Algarve Coast"
+look = "Algarve summer: turquoise sea, golden limestone cliffs, deep blue sky, warm sun with protected highlights"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.12
+chroma_global = 0.08
+highlights_Y = -0.04
+highlights_C = 0.03
+highlights_H = 62.0
+
+[darktable.colorequal]
+sat_cyan = 1.30
+hue_cyan = -6.0        # toward turquoise
+bright_cyan = 1.05
+sat_blue = 1.15
+bright_blue = 0.85
+sat_orange = 1.15
+sat_yellow = 1.10
+hue_yellow = -4.0      # toward gold

@@ -1,0 +1,33 @@
+name = "Albumen Print"
+look = "1870s albumen print: orthochromatic B&W, purple-brown to sepia toning, faded matte blacks, yellowed paper"
+credit = "House recipe (this repo)"
+
+[darktable.channelmixerrgb]   # B&W: orthochromatic, almost no red
+grey = [0.10, 0.45, 0.45, 0.0]
+illuminant = 0
+adaptation = 4
+x = 0.3457
+y = 0.3585
+gamut = 0.0
+
+[darktable.colorbalancergb]
+contrast = -0.06
+global_Y = 0.004       # faded blacks
+highlights_Y = -0.05   # paper, not white
+shadows_C = 0.05
+shadows_H = 10.0       # gold-toned purple-brown
+midtones_C = 0.045
+midtones_H = 45.0      # sepia
+highlights_C = 0.05
+highlights_H = 70.0    # yellowed paper
+
+[darktable.grain]
+strength = 8.0
+coarseness = 1000.0
+
+[darktable.vignette]
+scale = 70.0
+falloff_scale = 70.0
+brightness = -0.25
+saturation = 0.0
+autoratio = 1

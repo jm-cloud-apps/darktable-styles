@@ -1,0 +1,34 @@
+name = "Silent Hill Fog"
+look = "Silent Hill fog world: milky washed-out haze, near-monochrome sickly olive-grey, heavy grain"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = -0.15
+global_Y = 0.006       # milky lifted blacks
+chroma_global = -0.60
+saturation_global = -0.10
+shadows_Y = 0.04       # open shadows
+highlights_Y = -0.02
+shadows_C = 0.03
+shadows_H = 110.0      # sickly olive
+midtones_C = 0.02
+midtones_H = 100.0
+highlights_C = 0.015
+highlights_H = 85.0    # dirty yellow
+
+[darktable.soften]     # fog diffusion
+size = 80.0
+saturation = 40.0
+brightness = 0.5
+amount = 40.0
+
+[darktable.grain]      # the games' film-noise filter
+strength = 22.0
+coarseness = 1600.0
+
+[darktable.vignette]
+scale = 70.0
+falloff_scale = 80.0
+brightness = -0.10
+saturation = -0.30
+autoratio = 1

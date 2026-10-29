@@ -1,0 +1,41 @@
+name = "Lisbon Kodachrome"
+look = "1960s Kodachrome slide of Lisbon: tram yellows and terracotta reds, deep inky blue skies, dense warm shadows, crisp contrast, fine grain"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.20
+shadows_Y = -0.06
+highlights_Y = -0.02
+chroma_global = 0.06
+saturation_global = 0.14   # slide-film density: darker, richer color
+shadows_C = 0.02
+shadows_H = 30.0       # warm red-brown shadows
+highlights_C = 0.025
+highlights_H = 70.0
+
+[darktable.colorequal]
+threshold = 0.04
+sat_red = 1.15         # Kodachrome red: terracotta, tram livery, geraniums
+bright_red = 0.92
+sat_orange = 1.10      # tram yellow and ochre facades
+sat_yellow = 0.95
+hue_yellow = -6.0
+sat_green = 0.90
+hue_green = -4.0
+bright_green = 0.92
+sat_cyan = 0.95
+sat_blue = 1.15        # deep slide-film sky
+bright_blue = 0.85
+sat_lavender = 1.10
+bright_lavender = 0.90
+
+[darktable.grain]
+strength = 8.0
+coarseness = 1100.0
+
+[darktable.vignette]   # projector falloff
+scale = 75.0
+falloff_scale = 70.0
+brightness = -0.15
+saturation = -0.05
+autoratio = 1

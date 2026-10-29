@@ -1,0 +1,42 @@
+name = "Blue Hour"
+look = "City bridges at blue hour: deep cobalt sky and water, warm sodium and LED lights, clean blacks, soft glow around lamps"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.14
+shadows_Y = -0.04
+highlights_Y = -0.03   # keep lamp cores from clipping
+chroma_global = 0.06
+saturation_global = 0.06
+shadows_C = 0.025
+shadows_H = 240.0      # blue
+highlights_C = 0.03
+highlights_H = 55.0    # warm lights
+
+[darktable.colorequal]
+threshold = 0.04
+sat_blue = 1.15        # sky and water
+sat_lavender = 1.10    # the deep cobalt end of the sky
+bright_lavender = 0.95
+hue_lavender = -6.0    # violet twilight back toward cobalt
+sat_magenta = 0.85
+sat_orange = 1.15      # sodium and warm LED
+sat_red = 1.05
+sat_yellow = 0.95
+sat_green = 0.75       # mercury-vapor and LED green casts
+sat_cyan = 1.05
+
+[darktable.bloom]      # lamp halos only; a lower threshold blooms the twilight sky
+size = 10.0
+threshold = 95.0
+strength = 8.0
+
+[darktable.bilat]
+detail = 0.15
+
+[darktable.vignette]
+scale = 70.0
+falloff_scale = 70.0
+brightness = -0.15
+saturation = -0.10
+autoratio = 1

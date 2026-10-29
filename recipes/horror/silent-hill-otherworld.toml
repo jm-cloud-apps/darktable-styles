@@ -1,0 +1,36 @@
+name = "Silent Hill Otherworld"
+look = "Silent Hill Otherworld: rust and dried-blood browns, crushed blacks, drained greens and blues, gritty, dark edges"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.22
+chroma_global = -0.20
+saturation_shadows = 0.10
+shadows_Y = -0.08      # crushed
+shadows_C = 0.06
+shadows_H = 25.0       # dried blood
+midtones_C = 0.05
+midtones_H = 35.0      # rust
+highlights_C = 0.03
+highlights_H = 50.0
+
+[darktable.primaries]
+green_hue = -0.15      # greens toward bile yellow
+green_purity = 0.50
+blue_purity = 0.60
+achromatic_tint_hue = 0.5   # rust-orange cast
+achromatic_tint_purity = 0.06
+
+[darktable.bilat]
+detail = 0.25          # grit (= Clarity +5)
+
+[darktable.grain]
+strength = 20.0
+coarseness = 2000.0
+
+[darktable.vignette]
+scale = 55.0
+falloff_scale = 80.0
+brightness = -0.50
+saturation = -0.20
+autoratio = 1

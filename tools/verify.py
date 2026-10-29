@@ -59,18 +59,11 @@ def write_chart(path):
 
 
 def import_styles(db_path, files):
-    """Same rows darktable's styles import writes (src/common/styles.c)."""
     db = sqlite3.connect(db_path)
     for f in files:
         name, desc, items = dtstyle.read(f)
         sid = db.execute("INSERT INTO styles (name, description) VALUES (?, ?)", (name, desc)).lastrowid
-        for it in items:
-            db.execute("INSERT INTO style_items (styleid, num, module, operation, op_params, enabled,"
-                       " blendop_params, blendop_version, multi_priority, multi_name, multi_name_hand_edited)"
-                       " VALUES (?,?,?,?,?,?,?,?,?,?,?)",
-                       (sid, it["num"], it["version"], it["op"], it["blob"], it["enabled"], it["blendop"],
-                        it["blendop_version"], it["multi_priority"], it["multi_name"],
-                        it["multi_name_hand_edited"]))
+        dtstyle.db_insert_items(db, sid, items)
     db.commit()
     db.close()
 
@@ -107,6 +100,7 @@ def main():
             return subprocess.run(cmd, capture_output=True, text=True, errors="replace").stdout
 
         baseline = out_dir / "_original.jpg"
+        baseline.unlink(missing_ok=True)  # darktable-cli never overwrites; a stale baseline breaks the no-op check
         render(baseline)  # also creates the throwaway data.db
         import_styles(pathlib.Path(cfg, "data.db"), files)
 

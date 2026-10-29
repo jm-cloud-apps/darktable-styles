@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<darktable_style version="1.0">
+<info><name>A7V · Bridge · International Orange</name><description>Red suspension bridges like Lisbon's 25 de Abril and the Golden Gate: rich vermilion steel, deep clean blue sky and river, crisp cables. Recipe: House recipe (this repo).</description></info>
+<style>
+<plugin><num>0</num><module>5</module><operation>colorbalancergb</operation><op_params>0000000000000000000000003b83123c00000000000000008fc2f5bc00000000000000000000000000000000000000000000803f000000000000803f0000000000000000cdcc4c3d00000000cdcc4c3d000000000000000000000000000000000000000000000000000000000000000091ed3c3e0000000091ed3c3e8fc2f53d01000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>1</num><module>4</module><operation>colorequal</operation><op_params>0ad7233d0000803f000000000000803f0000c03f0000803f010000003d0a973f14ae873f3333733f6666663f713d8a3f3333933f14ae873f6666663f0000404000000000000000000000000000000000000000000000000000000000d7a3703f0000803f0000803f0000803f0000803f1f856b3f0000803f0000803f00000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>2</num><module>3</module><operation>bilat</operation><op_params>010000000000003f0000003fcdcc4c3e0000003f</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+</style>
+</darktable_style>

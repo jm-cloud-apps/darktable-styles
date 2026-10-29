@@ -1,0 +1,36 @@
+name = "Platinum Print"
+look = "Fine-art wildlife B&W: soft warm platinum tones, luminous fur and feathers, velvety brown-black shadows, gentle vignette"
+credit = "House recipe (this repo)"
+
+[darktable.channelmixerrgb]   # B&W: light yellow filter, separates fur and feather tones
+grey = [0.40, 0.50, 0.10, 0.0]
+illuminant = 0
+adaptation = 4
+x = 0.3457
+y = 0.3585
+gamut = 0.0
+
+[darktable.colorbalancergb]
+contrast = 0.12
+shadows_Y = -0.04
+highlights_Y = -0.02   # platinum highlights stay soft
+shadows_C = 0.025
+shadows_H = 35.0       # warm brown-black
+midtones_C = 0.02
+midtones_H = 50.0
+highlights_C = 0.015
+highlights_H = 70.0
+
+[darktable.bilat]
+detail = 0.20
+
+[darktable.grain]
+strength = 8.0
+coarseness = 1200.0
+
+[darktable.vignette]
+scale = 60.0
+falloff_scale = 80.0
+brightness = -0.30
+saturation = 0.0
+autoratio = 1

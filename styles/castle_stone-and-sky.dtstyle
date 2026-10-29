@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<darktable_style version="1.0">
+<info><name>A7V · Castle · Stone and Sky</name><description>Sunlit castle walls: warm textured stone, deep polarizer-blue sky, protected cloud highlights, crisp detail. Recipe: House recipe (this repo).</description></info>
+<style>
+<plugin><num>0</num><module>5</module><operation>colorbalancergb</operation><op_params>000000000000000000000000aed8433c00000000000000000ad723bd0ad7a33c000070420000000000000000000000000000803f000000000000803f0000000000000000cdcc4c3d0000000000000000000000000000000000000000000000000000000000000000000000000000000091ed3c3e0000000091ed3c3e8fc2f53d01000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>1</num><module>4</module><operation>colorequal</operation><op_params>cdcccc3d0000803f000000000000803f0000c03f0000803f010000000000803fcdcc8c3f6666863f0000803fcdcc8c3f9a99993f0000803f0000803f00000000000000000000000000000000000000000000000000000000000000000000803f6666863f0000803f0000803f6666663fcdcc4c3f0000803f0000803f00000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>2</num><module>3</module><operation>bilat</operation><op_params>010000000000003f0000003f0000803e0000003f</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+</style>
+</darktable_style>

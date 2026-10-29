@@ -1,0 +1,36 @@
+name = "Saudade"
+look = "Mid-century Lisbon street photography: warm-toned silver gelatin B&W, soft rich greys, luminous whitewash, deep open blacks, fine grain"
+credit = "House recipe (this repo)"
+
+[darktable.channelmixerrgb]   # B&W: yellow filter, slightly darker sky, bright whitewash
+grey = [0.40, 0.50, 0.10, 0.0]
+illuminant = 0
+adaptation = 4
+x = 0.3457
+y = 0.3585
+gamut = 0.0
+
+[darktable.colorbalancergb]
+contrast = 0.14
+shadows_Y = -0.03
+highlights_Y = 0.02
+shadows_C = 0.022
+shadows_H = 45.0       # warm-black paper
+midtones_C = 0.016
+midtones_H = 58.0
+highlights_C = 0.014
+highlights_H = 75.0
+
+[darktable.bilat]
+detail = 0.12
+
+[darktable.grain]
+strength = 14.0
+coarseness = 1400.0
+
+[darktable.vignette]
+scale = 65.0
+falloff_scale = 80.0
+brightness = -0.25
+saturation = 0.0
+autoratio = 1

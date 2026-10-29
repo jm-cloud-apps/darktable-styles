@@ -1,0 +1,27 @@
+name = "Fresh Market"
+look = "Market produce and salads: juicy tomato reds, sunny citrus, crisp yellow-greens, clean whites, crunchy texture"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.10
+vibrance = 0.12
+chroma_global = 0.04
+saturation_global = 0.04
+highlights_Y = -0.02   # plates and cream keep detail
+
+[darktable.colorequal]
+threshold = 0.04       # full effect on the low-chroma yellows and greens
+sat_red = 1.10         # tomatoes, peppers, berries
+hue_red = 2.0          # toward appetizing orange-red, away from magenta
+bright_red = 0.97
+sat_orange = 1.08      # citrus, lemons, carrots, yolks
+sat_yellow = 1.12      # lettuce, herbs, avocado
+bright_yellow = 1.04
+sat_green = 1.08
+hue_green = -4.0       # toward fresh yellow-green
+sat_cyan = 0.92        # calm cool backgrounds and blue casts on whites
+sat_blue = 0.90
+sat_lavender = 0.95
+
+[darktable.bilat]
+detail = 0.18

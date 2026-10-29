@@ -1,0 +1,37 @@
+name = "Dragonstone"
+look = "Game of Thrones Dragonstone: storm-lit coastal fortress, dark wet rock, teal-grey sea, heavy brooding sky"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.28
+chroma_global = -0.40
+shadows_Y = -0.10      # black volcanic rock
+highlights_Y = -0.05   # heavy sky
+shadows_C = 0.04
+shadows_H = 170.0      # green-slate
+midtones_C = 0.015
+midtones_H = 170.0
+highlights_C = 0.015
+highlights_H = 60.0    # pale storm light
+
+[darktable.colorequal]
+sat_cyan = 1.10        # sea
+bright_cyan = 0.90
+sat_blue = 0.80
+sat_green = 0.70
+bright_green = 0.85
+sat_orange = 0.90
+
+[darktable.bilat]
+detail = 0.20
+
+[darktable.grain]
+strength = 12.0
+coarseness = 1600.0
+
+[darktable.vignette]
+scale = 60.0
+falloff_scale = 80.0
+brightness = -0.45
+saturation = -0.20
+autoratio = 1

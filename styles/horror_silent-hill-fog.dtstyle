@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<darktable_style version="1.0">
+<info><name>A7V · Horror · Silent Hill Fog</name><description>Silent Hill fog world: milky washed-out haze, near-monochrome sickly olive-grey, heavy grain. Recipe: House recipe (this repo).</description></info>
+<style>
+<plugin><num>0</num><module>5</module><operation>colorbalancergb</operation><op_params>0ad7233d8fc2f53c0000dc42000000000ad7a33c0000c8420ad7a3bc8fc2753c0000aa42a69bc43b00000000000000000000803f000000000000803f00000000000000009a9919bf00000000cdccccbd000000000000000000000000000000000000000000000000000000000000000091ed3c3e0000000091ed3c3e9a9919be01000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>1</num><module>2</module><operation>grain</operation><op_params>020000006d26f0400000b0410000c842</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>2</num><module>1</module><operation>soften</operation><op_params>0000a042000020420000003f00002042</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>3</num><module>4</module><operation>vignette</operation><op_params>00008c420000a042cdccccbd9a9999be0000000000000000010000000000803f0000803f0000000001000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+</style>
+</darktable_style>

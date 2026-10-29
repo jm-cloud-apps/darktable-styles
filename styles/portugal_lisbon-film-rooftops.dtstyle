@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<darktable_style version="1.0">
+<info><name>A7V · Portugal · Lisbon Film Rooftops</name><description>Alfama from a miradouro on film: pale washed-out sky and river, brick-brown terracotta, creamy whitewash, dense chocolate-brown shadows, olive pines, strong grain. Recipe: House recipe matched to @morganitogram's Lisbon photos (Instagram). Typical exposure comp. +1/3 to +2/3.</description></info>
+<style>
+<plugin><num>0</num><module>5</module><operation>colorbalancergb</operation><op_params>cdcc4cbdcdcccc3c00003442cb2d28bca69bc43b000070428fc2753d6f12833b0000aa42a69bc43a52491d3a000034420000803f000000000000803f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000091ed3c3e0000000091ed3c3e295c0f3e01000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>1</num><module>4</module><operation>colorequal</operation><op_params>0ad7233d0000803f000000000000803f0000c03f0000803f010000003333733f0000803f9a99593fcdcc4c3f9a99593f0ad7233f5c8f423f0000803f0000a040000000c0000040c00000000000000000000000c1000020c1000000009a99593f6666663f0000803f0000803f0000803f0000c03f6666a63f0000803f00000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>2</num><module>2</module><operation>grain</operation><op_params>020000006d26f0400000c0410000c842</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+</style>
+</darktable_style>

@@ -1,0 +1,36 @@
+name = "Golden Bakery"
+look = "Bread, pastries and pastel de nata: golden crusts, honeyed highlights, rich toasty browns, creamy whites, warm cozy shadows"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.10
+chroma_global = 0.03
+saturation_global = 0.06
+shadows_C = 0.025
+shadows_H = 40.0       # warm brown
+midtones_C = 0.02
+midtones_H = 58.0      # honey
+highlights_C = 0.025
+highlights_H = 72.0    # cream
+
+[darktable.colorequal]
+threshold = 0.04
+sat_red = 1.06         # crusts, coffee and chocolate sit between red and orange
+bright_red = 0.95      # deeper, toastier browns
+sat_orange = 1.12      # golden crust, custard, egg wash
+hue_orange = -2.0      # toward caramel
+sat_yellow = 0.95
+sat_green = 0.85
+sat_cyan = 0.85
+sat_blue = 0.80
+sat_lavender = 0.85
+
+[darktable.bilat]
+detail = 0.20          # crust and flake texture
+
+[darktable.vignette]
+scale = 70.0
+falloff_scale = 75.0
+brightness = -0.15
+saturation = -0.10
+autoratio = 1

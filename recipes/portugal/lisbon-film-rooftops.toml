@@ -1,0 +1,41 @@
+name = "Lisbon Film Rooftops"
+look = "Alfama from a miradouro on film: pale washed-out sky and river, brick-brown terracotta, creamy whitewash, dense chocolate-brown shadows, olive pines, strong grain"
+credit = "House recipe matched to @morganitogram's Lisbon photos (Instagram)"
+source = "https://www.instagram.com/morganitogram/"
+ec = "+1/3 to +2/3"    # the airy sky is partly exposure
+
+[darktable.colorbalancergb]
+contrast = 0.14
+shadows_Y = -0.05      # dense shadows
+highlights_Y = 0.06    # bright, airy sky
+global_Y = 0.0015
+global_C = 0.0006      # the offset is the only wheel that reaches black: chocolate-brown blacks
+global_H = 45.0
+shadows_C = 0.025
+shadows_H = 45.0
+midtones_C = 0.006
+midtones_H = 60.0      # a touch of afternoon gold
+highlights_C = 0.004
+highlights_H = 85.0    # cream, not yellow
+
+[darktable.colorequal]
+threshold = 0.04
+sat_blue = 0.64        # bleached sky and river
+bright_blue = 1.50
+hue_blue = -8.0        # toward pale cyan
+sat_lavender = 0.76
+hue_lavender = -10.0
+bright_lavender = 1.30
+sat_cyan = 0.85
+sat_red = 0.95         # terracotta toward brick brown
+hue_red = 5.0
+bright_red = 0.85
+hue_orange = -2.0
+bright_orange = 0.90
+sat_yellow = 0.85
+hue_yellow = -3.0      # olive pines
+sat_green = 0.80
+
+[darktable.grain]
+strength = 24.0
+coarseness = 1600.0

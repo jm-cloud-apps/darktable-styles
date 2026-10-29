@@ -1,0 +1,35 @@
+name = "Castle Dimitrescu"
+look = "Resident Evil Village gothic castle: cold blue-grey stone and snow, gilded highlights, crimson accents, deep shadows"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.18
+chroma_global = -0.20
+shadows_Y = -0.05
+shadows_C = 0.05
+shadows_H = 225.0      # cold stone
+midtones_C = 0.02
+midtones_H = 210.0
+highlights_C = 0.05
+highlights_H = 65.0    # gilt
+
+[darktable.colorequal]
+sat_red = 1.2          # drapes and wine
+bright_red = 0.85
+hue_red = -4.0
+sat_yellow = 1.1       # gold
+sat_green = 0.6        # winter-drained foliage
+
+[darktable.bilat]
+detail = 0.15
+
+[darktable.grain]
+strength = 10.0
+coarseness = 1400.0
+
+[darktable.vignette]
+scale = 60.0
+falloff_scale = 80.0
+brightness = -0.35
+saturation = -0.20
+autoratio = 1
