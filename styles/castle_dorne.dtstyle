@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<darktable_style version="1.0">
+<info><name>A7V · Castle · Dorne</name><description>Game of Thrones Dorne: sun-baked Moorish palace, saturated golds and terracotta, lush gardens, warm turquoise pools. Recipe: House recipe (this repo).</description></info>
+<style>
+<plugin><num>0</num><module>5</module><operation>colorbalancergb</operation><op_params>000000000000000000000000aed8433c8fc2f53c000048420ad723bd295c8f3d00005c420000000000000000000000000000803f000000000000803f0000000000000000cdcccc3d000000008fc2753d000000000000000000000000000000000000000000000000000000000000000091ed3c3e0000000091ed3c3e8fc2f53d01000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>1</num><module>4</module><operation>colorequal</operation><op_params>cdcccc3d0000803f000000000000803f0000c03f0000803f010000000000803f9a99993f3333933fcdcc8c3f3333933f0000803f0000803f0000803f00000000000040c00000a0c000000000000000000000000000000000000000000000803f0000803f0000803f0000803f0000803f6666663f0000803f0000803f00000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>2</num><module>2</module><operation>grain</operation><op_params>02000000041896400000c0400000c842</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+</style>
+</darktable_style>

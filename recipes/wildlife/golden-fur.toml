@@ -1,0 +1,40 @@
+name = "Golden Fur"
+look = "Backlit golden-hour animals and pets: warm glowing rim light, creamy highlights, soft warm shadows, gentle fur texture"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.06
+saturation_global = 0.04
+highlights_Y = -0.02
+shadows_C = 0.015
+shadows_H = 45.0
+midtones_C = 0.015
+midtones_H = 58.0
+highlights_C = 0.03
+highlights_H = 62.0    # golden rim light; no chroma boost, so golden-hour frames don't overcook
+
+[darktable.colorequal]
+threshold = 0.04
+sat_orange = 1.06      # fur, eyes, golden grass
+bright_orange = 1.02
+sat_red = 1.04
+sat_green = 0.90
+hue_green = -6.0       # foliage toward warm
+sat_cyan = 0.85
+sat_blue = 0.85
+
+[darktable.soften]     # backlight glow
+size = 50.0
+saturation = 90.0
+brightness = 0.25
+amount = 12.0
+
+[darktable.bilat]
+detail = 0.10
+
+[darktable.vignette]
+scale = 70.0
+falloff_scale = 75.0
+brightness = -0.15
+saturation = -0.05
+autoratio = 1

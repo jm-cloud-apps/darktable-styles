@@ -1,0 +1,32 @@
+name = "Infrared Ruins"
+look = "B&W infrared: foliage glows pale, skies go near-black, soft halation; made for castles among trees"
+credit = "House recipe (this repo)"
+
+[darktable.channelmixerrgb]   # B&W: green-heavy, blue subtracted (Wood effect)
+grey = [0.10, 1.50, -0.60, 0.0]
+illuminant = 0
+adaptation = 4
+x = 0.3457
+y = 0.3585
+gamut = 0.0
+
+[darktable.colorbalancergb]
+contrast = 0.15
+highlights_Y = 0.03
+
+[darktable.soften]     # IR halation
+size = 50.0
+saturation = 0.0
+brightness = 0.4
+amount = 30.0
+
+[darktable.grain]
+strength = 14.0
+coarseness = 1800.0
+
+[darktable.vignette]
+scale = 70.0
+falloff_scale = 70.0
+brightness = -0.25
+saturation = 0.0
+autoratio = 1

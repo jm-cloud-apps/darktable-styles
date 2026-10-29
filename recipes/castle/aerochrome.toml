@@ -1,0 +1,21 @@
+name = "Aerochrome"
+look = "Kodak Aerochrome false-color infrared: foliage turns crimson and pink, skies deepen, stone stays pale"
+credit = "House recipe (this repo)"
+
+[darktable.colorequal]
+threshold = 0.05       # reach muted foliage too
+hue_green = -140.0     # foliage toward crimson
+hue_yellow = -70.0     # yellow-green leaves toward red
+sat_green = 1.5
+sat_yellow = 1.2
+bright_green = 1.25    # IR foliage glows
+sat_blue = 1.2
+bright_blue = 0.85
+
+[darktable.colorbalancergb]
+contrast = 0.12
+chroma_global = 0.05
+
+[darktable.grain]
+strength = 10.0
+coarseness = 1400.0

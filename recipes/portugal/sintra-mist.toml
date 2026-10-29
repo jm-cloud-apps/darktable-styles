@@ -1,0 +1,28 @@
+name = "Sintra Mist"
+look = "Sintra hills: misty romantic forest, deep emerald moss, cool soft shadows, glowing palace yellows and reds"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = -0.06
+global_Y = 0.002
+shadows_C = 0.03
+shadows_H = 175.0
+highlights_C = 0.02
+highlights_H = 70.0
+
+[darktable.colorequal]
+sat_green = 1.15
+hue_green = 6.0        # toward emerald
+bright_green = 0.85
+sat_yellow = 1.10      # Pena Palace yellow
+sat_red = 1.10         # and red
+
+[darktable.soften]
+size = 60.0
+saturation = 80.0
+brightness = 0.3
+amount = 20.0
+
+[darktable.grain]
+strength = 8.0
+coarseness = 1200.0

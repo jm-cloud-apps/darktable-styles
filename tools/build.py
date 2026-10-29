@@ -19,14 +19,15 @@ import dtstyle  # noqa: E402
 
 REPO = pathlib.Path(__file__).resolve().parent.parent
 ROOT = "A7V"  # style name prefix; flat names (no "|" folders) avoid the 5.6.x quick-menu crash
-GROUPS = {"base": "Base", "fuji": "Fuji", "vintage": "Vintage"}
+GROUPS = {"base": "Base", "fuji": "Fuji", "vintage": "Vintage", "medieval": "Medieval", "horror": "Horror",
+          "castle": "Castle", "portugal": "Portugal", "food": "Food", "bridge": "Bridge", "wildlife": "Wildlife"}
 
 # --- Fuji setting -> darktable translation (tuned by eye; README "How recipes map") ---
 HIGHLIGHT_STEP = 0.07   # colorbalancergb highlights_Y per Highlight step (+ = brighter/harder)
 SHADOW_STEP = -0.08     # colorbalancergb shadows_Y per Shadow step (+ = deeper/harder)
 COLOR_STEP = 0.045      # chroma_global per Color step
 CCE = {"off": 0.0, "weak": 0.06, "strong": 0.12}    # saturation_global: density in saturated colors
-CCB = {"off": 1.0, "weak": 1.05, "strong": 1.10}    # primaries blue_purity multiplier
+CCB = {"weak": (1.05, 0.92), "strong": (1.10, 0.85)}  # colorequal blue (sat, bright): deeper, denser blues
 DR = {"auto": 0.0, 100: 0.0, 200: -0.02, 400: -0.04}  # extra highlights_Y (highlight protection)
 GRAIN_STRENGTH = {"weak": 10.0, "strong": 18.0}
 GRAIN_SIZE = {"small": 1000.0, "large": 2000.0}     # darktable "coarseness"
@@ -37,7 +38,8 @@ WB_KELVIN = {"auto": 5500, "daylight": 5500, "shade": 7000, "fluorescent3": 4000
 B_AXIS = math.radians(-116)  # Fuji "B" axis (blue primary) relative to the red primary
 GREY = 0.1845
 
-PIPE_ORDER = ["channelmixerrgb", "primaries", "colorbalancergb", "bilat", "bloom", "grain", "soften", "vignette"]
+PIPE_ORDER = ["channelmixerrgb", "primaries", "colorbalancergb", "colorequal", "bilat", "bloom", "grain", "soften",
+              "vignette"]
 
 
 def wb_tint(wb, shift):
@@ -77,7 +79,9 @@ def translate(recipe, sims):
         else:
             add("chroma_global", COLOR_STEP * fuji.get("color", 0))
             add("saturation_global", CCE[fuji.get("cce", "off")])
-            pr["blue_purity"] = pr.get("blue_purity", 1.0) * CCB[fuji.get("ccb", "off")]
+            if fuji.get("ccb", "off") != "off":
+                sat, bright = CCB[fuji["ccb"]]
+                mods["colorequal"] = {"sat_blue": sat, "bright_blue": bright}
             hue, purity = wb_tint(fuji.get("wb", "auto"), fuji.get("wb_shift", [0, 0]))
             if purity > 1e-4:
                 pr.update(achromatic_tint_hue=hue, achromatic_tint_purity=purity)

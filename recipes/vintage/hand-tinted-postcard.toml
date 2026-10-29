@@ -1,0 +1,46 @@
+name = "Hand-Tinted Postcard"
+look = "Early-1900s hand-colored Lisbon postcard: sepia photo base washed with delicate sky blue, rose roofs and leaf green, cream paper, faded blacks"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = -0.04
+global_Y = 0.003       # faded blacks
+highlights_Y = -0.04
+chroma_global = -0.60  # mostly monochrome base
+shadows_C = 0.05
+shadows_H = 40.0       # sepia
+midtones_C = 0.02
+midtones_H = 50.0
+highlights_C = 0.015   # stronger paper tones would swamp the sky wash
+highlights_H = 75.0    # cream paper
+
+[darktable.colorequal]  # the hand-applied washes
+threshold = 0.0        # act on the desaturated base too
+sat_blue = 1.50
+hue_blue = -8.0        # soft cyan-blue sky
+sat_lavender = 1.40
+hue_lavender = -12.0   # cobalt toward soft sky blue
+sat_cyan = 1.35
+sat_red = 1.35         # roofs and flags
+hue_red = -3.0         # toward rose
+sat_orange = 1.10      # skin and stone stay mostly sepia
+sat_yellow = 1.30
+sat_green = 1.35       # leaf green
+hue_green = -6.0
+
+[darktable.soften]
+size = 40.0
+saturation = 60.0
+brightness = 0.15
+amount = 10.0
+
+[darktable.grain]
+strength = 8.0
+coarseness = 1000.0
+
+[darktable.vignette]
+scale = 65.0
+falloff_scale = 80.0
+brightness = -0.25
+saturation = -0.10
+autoratio = 1

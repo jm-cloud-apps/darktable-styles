@@ -1,0 +1,31 @@
+name = "Winterfell"
+look = "Game of Thrones Winterfell: overcast northern cold, blue-grey stone and sky, muted wool and leather, pale soft light"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.06
+chroma_global = -0.30
+global_Y = 0.0015      # soft overcast lift
+shadows_C = 0.05
+shadows_H = 210.0      # blue-grey
+midtones_C = 0.025
+midtones_H = 200.0
+highlights_C = 0.01
+highlights_H = 190.0   # cold sky
+
+[darktable.colorequal]
+sat_orange = 0.85      # muted leather and skin
+sat_red = 0.85
+sat_green = 0.65       # winter-drained grass
+hue_green = 10.0       # toward cold cyan-green
+
+[darktable.grain]
+strength = 10.0
+coarseness = 1400.0
+
+[darktable.vignette]
+scale = 70.0
+falloff_scale = 75.0
+brightness = -0.20
+saturation = -0.15
+autoratio = 1

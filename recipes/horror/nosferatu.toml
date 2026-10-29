@@ -1,0 +1,39 @@
+name = "Nosferatu"
+look = "1922 silent-film night scene: blue-tinted orthochromatic B&W, soft halation, worn grainy print, dark iris edges"
+credit = "House recipe (this repo)"
+
+[darktable.channelmixerrgb]   # B&W: orthochromatic, red-blind
+grey = [0.05, 0.45, 0.50, 0.0]
+illuminant = 0
+adaptation = 4
+x = 0.3457
+y = 0.3585
+gamut = 0.0
+
+[darktable.colorbalancergb]
+contrast = 0.18
+global_Y = 0.002       # worn print
+highlights_Y = -0.04
+shadows_C = 0.06
+shadows_H = 235.0
+midtones_C = 0.10
+midtones_H = 230.0
+highlights_C = 0.12
+highlights_H = 225.0   # dyed base: blue whites
+
+[darktable.soften]
+size = 50.0
+saturation = 100.0
+brightness = 0.25
+amount = 25.0
+
+[darktable.grain]
+strength = 26.0
+coarseness = 2200.0
+
+[darktable.vignette]
+scale = 50.0
+falloff_scale = 75.0
+brightness = -0.60
+saturation = 0.0
+autoratio = 1

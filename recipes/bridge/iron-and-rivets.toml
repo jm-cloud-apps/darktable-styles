@@ -1,0 +1,40 @@
+name = "Iron and Rivets"
+look = "Industrial iron bridges like Porto's Dom Luis I: gritty steel texture, cool desaturated blue-grey, surviving rust accents, hard contrast"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.20
+chroma_global = -0.35
+saturation_global = 0.06
+shadows_Y = -0.05
+shadows_C = 0.035
+shadows_H = 205.0      # steel blue
+midtones_C = 0.012
+midtones_H = 215.0
+highlights_C = 0.015
+highlights_H = 60.0
+
+[darktable.colorequal]
+threshold = 0.04
+sat_red = 1.20         # rust and red-oxide primer survive
+bright_red = 0.92
+sat_orange = 1.15
+hue_orange = -3.0
+sat_yellow = 0.70
+sat_green = 0.60
+sat_cyan = 0.85
+sat_blue = 0.90
+
+[darktable.bilat]
+detail = 0.40          # rivets and girders
+
+[darktable.grain]
+strength = 10.0
+coarseness = 1400.0
+
+[darktable.vignette]
+scale = 65.0
+falloff_scale = 75.0
+brightness = -0.25
+saturation = -0.15
+autoratio = 1

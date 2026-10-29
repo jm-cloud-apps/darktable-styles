@@ -1,0 +1,37 @@
+name = "Faded Tapestry"
+look = "Faded medieval tapestry: matte low contrast, ochre and parchment tones, brick reds, softened detail"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = -0.10
+global_Y = 0.004       # matte, faded blacks
+chroma_global = -0.18
+saturation_global = -0.05
+highlights_Y = -0.04   # parchment, not paper white
+shadows_C = 0.03
+shadows_H = 30.0       # umber
+midtones_C = 0.035
+midtones_H = 65.0      # ochre
+highlights_C = 0.04
+highlights_H = 75.0    # parchment
+
+[darktable.primaries]
+red_hue = 0.06         # madder red toward brick
+green_hue = -0.12      # olive
+green_purity = 0.70
+blue_hue = -0.05       # woad
+blue_purity = 0.75
+
+[darktable.bilat]
+detail = -0.15
+
+[darktable.grain]
+strength = 8.0
+coarseness = 2400.0
+
+[darktable.vignette]
+scale = 75.0
+falloff_scale = 70.0
+brightness = -0.15
+saturation = -0.15
+autoratio = 1

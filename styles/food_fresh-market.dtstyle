@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<darktable_style version="1.0">
+<info><name>A7V · Food · Fresh Market</name><description>Market produce and salads: juicy tomato reds, sunny citrus, crisp yellow-greens, clean whites, crunchy texture. Recipe: House recipe (this repo).</description></info>
+<style>
+<plugin><num>0</num><module>5</module><operation>colorbalancergb</operation><op_params>00000000000000000000000076dbc23b00000000000000000ad7a3bc00000000000000000000000000000000000000000000803f000000000000803f00000000000000000ad7233d000000000ad7233d000000000000000000000000000000000000000000000000000000000000000091ed3c3e8fc2f53d91ed3c3ecdcccc3d01000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>1</num><module>4</module><operation>colorequal</operation><op_params>0ad7233d0000803f000000000000803f0000c03f0000803f01000000cdcc8c3f713d8a3f295c8f3f713d8a3f1f856b3f6666663f3333733f0000803f000000400000000000000000000080c000000000000000000000000000000000ec51783f0000803fb81e853f0000803f0000803f0000803f0000803f0000803f00000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>2</num><module>3</module><operation>bilat</operation><op_params>010000000000003f0000003fec51383e0000003f</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+</style>
+</darktable_style>

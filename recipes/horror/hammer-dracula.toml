@@ -1,0 +1,31 @@
+name = "Hammer Dracula"
+look = "1950s Hammer Horror Technicolor: lurid crimson blood reds, rich color, inky violet blacks, warm candlelit skin"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.20
+chroma_global = 0.10
+saturation_global = 0.10
+shadows_Y = -0.07
+shadows_C = 0.03
+shadows_H = 280.0      # violet night
+highlights_C = 0.03
+highlights_H = 50.0
+
+[darktable.colorequal]
+sat_red = 1.45
+bright_red = 0.85      # dense blood red
+hue_red = -4.0         # toward crimson
+sat_magenta = 1.15
+sat_green = 0.85
+
+[darktable.grain]
+strength = 8.0
+coarseness = 1200.0
+
+[darktable.vignette]
+scale = 65.0
+falloff_scale = 75.0
+brightness = -0.30
+saturation = -0.10
+autoratio = 1

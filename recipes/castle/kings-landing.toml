@@ -1,0 +1,37 @@
+name = "King's Landing"
+look = "Game of Thrones King's Landing: warm golden sunlit stone, teal-shadowed alleys, rich but restrained color, firm contrast"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.16
+chroma_global = -0.05
+saturation_global = 0.05
+highlights_Y = -0.03
+shadows_C = 0.04
+shadows_H = 195.0      # teal shade
+midtones_C = 0.02
+midtones_H = 55.0
+highlights_C = 0.06
+highlights_H = 58.0    # golden sun
+
+[darktable.colorequal]
+sat_orange = 1.12      # stone and skin warmth
+sat_yellow = 1.05
+sat_blue = 0.90
+hue_blue = -5.0        # sky toward teal
+sat_green = 0.85
+hue_green = -8.0       # Mediterranean olive
+
+[darktable.bilat]
+detail = 0.12
+
+[darktable.grain]
+strength = 6.0
+coarseness = 1000.0
+
+[darktable.vignette]
+scale = 75.0
+falloff_scale = 70.0
+brightness = -0.15
+saturation = 0.0
+autoratio = 1

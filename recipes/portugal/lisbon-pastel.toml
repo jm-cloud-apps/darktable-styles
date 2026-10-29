@@ -1,0 +1,22 @@
+name = "Lisbon Pastel"
+look = "Lisbon facades in Atlantic light: soft pastel pinks, yellows and mint, airy open shadows, gentle warmth"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = -0.06
+global_Y = 0.0015
+shadows_Y = 0.03
+chroma_global = -0.08
+saturation_global = -0.08   # lighter, chalkier colors
+highlights_C = 0.02
+highlights_H = 60.0
+
+[darktable.colorequal]
+bright_yellow = 1.08
+bright_orange = 1.05
+bright_magenta = 1.05
+sat_blue = 0.90
+
+[darktable.grain]
+strength = 6.0
+coarseness = 1000.0

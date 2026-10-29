@@ -1,0 +1,29 @@
+name = "Douro Gold"
+look = "Porto and the Douro valley at golden hour: honeyed highlights, olive terraced vines, rich warm shadows"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.12
+shadows_C = 0.03
+shadows_H = 40.0
+midtones_C = 0.03
+midtones_H = 52.0
+highlights_C = 0.07
+highlights_H = 55.0
+
+[darktable.colorequal]
+hue_green = -10.0      # toward olive
+sat_green = 0.85
+sat_orange = 1.15
+sat_blue = 0.85        # calmer river and sky
+
+[darktable.grain]
+strength = 8.0
+coarseness = 1200.0
+
+[darktable.vignette]
+scale = 75.0
+falloff_scale = 70.0
+brightness = -0.15
+saturation = 0.0
+autoratio = 1

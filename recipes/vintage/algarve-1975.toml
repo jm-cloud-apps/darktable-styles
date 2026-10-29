@@ -1,0 +1,45 @@
+name = "Algarve 1975"
+look = "1970s Algarve souvenir postcard: faded turquoise sea and sky, rosy sun-warmed skin and walls, milky lifted blacks, soft printed contrast"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = -0.08
+global_Y = 0.004       # milky blacks
+highlights_Y = -0.05   # paper, not white
+chroma_global = -0.10
+saturation_global = -0.06
+shadows_C = 0.04
+shadows_H = 195.0      # cyan shadows of a faded print
+midtones_C = 0.012
+midtones_H = 20.0      # rose
+highlights_C = 0.04
+highlights_H = 55.0    # warm cream
+
+[darktable.colorequal]
+threshold = 0.04
+sat_cyan = 1.15        # turquoise sea
+hue_blue = -20.0       # sky toward turquoise
+sat_lavender = 0.90
+hue_lavender = -15.0
+sat_green = 0.75
+hue_green = 8.0        # faded greens drift teal
+sat_yellow = 0.85
+sat_orange = 0.95
+sat_red = 1.05
+
+[darktable.soften]     # soft print
+size = 30.0
+saturation = 100.0
+brightness = 0.1
+amount = 8.0
+
+[darktable.grain]
+strength = 10.0
+coarseness = 1300.0
+
+[darktable.vignette]
+scale = 75.0
+falloff_scale = 75.0
+brightness = -0.12
+saturation = -0.05
+autoratio = 1

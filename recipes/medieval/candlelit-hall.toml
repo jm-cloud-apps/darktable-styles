@@ -1,0 +1,38 @@
+name = "Candlelit Hall"
+look = "Firelit great hall: amber candle glow, deep warm-brown shadows, muted greens and blues, heavy vignette"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.16
+chroma_global = -0.22
+saturation_global = 0.04
+saturation_highlights = -0.04
+shadows_Y = -0.05      # low-key chiaroscuro without crushing
+shadows_C = 0.035
+shadows_H = 35.0       # warm brown
+midtones_C = 0.03
+midtones_H = 52.0      # amber
+highlights_C = 0.06
+highlights_H = 60.0    # candlelight
+
+[darktable.primaries]
+green_hue = -0.10      # greens toward olive
+green_purity = 0.70
+blue_purity = 0.70
+
+[darktable.soften]     # flame glow
+size = 60.0
+saturation = 90.0
+brightness = 0.25
+amount = 22.0
+
+[darktable.grain]
+strength = 10.0
+coarseness = 1400.0
+
+[darktable.vignette]
+scale = 55.0
+falloff_scale = 85.0
+brightness = -0.40
+saturation = -0.25
+autoratio = 1

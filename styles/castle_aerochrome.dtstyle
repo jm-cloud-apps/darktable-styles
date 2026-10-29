@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<darktable_style version="1.0">
+<info><name>A7V · Castle · Aerochrome</name><description>Kodak Aerochrome false-color infrared: foliage turns crimson and pink, skies deepen, stone stays pale. Recipe: House recipe (this repo).</description></info>
+<style>
+<plugin><num>0</num><module>5</module><operation>colorbalancergb</operation><op_params>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000803f000000000000803f0000000000000000cdcc4c3d0000000000000000000000000000000000000000000000000000000000000000000000000000000091ed3c3e0000000091ed3c3e8fc2f53d01000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>1</num><module>4</module><operation>colorequal</operation><op_params>cdcc4c3d0000803f000000000000803f0000c03f0000803f010000000000803f0000803f9a99993f0000c03f0000803f9a99993f0000803f0000803f000000000000000000008cc200000cc3000000000000000000000000000000000000803f0000803f0000803f0000a03f0000803f9a99593f0000803f0000803f00000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+<plugin><num>2</num><module>2</module><operation>grain</operation><op_params>020000009f21d240000020410000c842</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+</style>
+</darktable_style>

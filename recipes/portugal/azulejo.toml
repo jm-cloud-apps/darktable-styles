@@ -1,0 +1,21 @@
+name = "Azulejo"
+look = "Portuguese tiles and whitewash: clean whites, deep cobalt blues, terracotta roofs, crisp tile detail"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.14
+highlights_Y = -0.02
+
+[darktable.colorequal]
+sat_blue = 1.30
+bright_blue = 0.82
+hue_blue = 4.0         # toward cobalt / ultramarine
+sat_lavender = 1.10
+sat_cyan = 0.95
+sat_orange = 1.15      # terracotta
+bright_orange = 0.95
+hue_orange = -4.0
+sat_yellow = 0.90      # keeps whitewash from going cream
+
+[darktable.bilat]
+detail = 0.15

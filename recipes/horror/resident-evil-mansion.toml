@@ -1,0 +1,33 @@
+name = "Resident Evil Mansion"
+look = "Resident Evil mansion at night: cold teal moonlit shadows, sickly green midtones, warm lamp highlights, deep blacks"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.20
+chroma_global = -0.25
+shadows_Y = -0.06
+shadows_C = 0.07
+shadows_H = 190.0      # moonlit teal
+midtones_C = 0.03
+midtones_H = 140.0     # sickly green
+highlights_C = 0.04
+highlights_H = 60.0    # oil lamp
+
+[darktable.primaries]
+red_purity = 0.95
+green_hue = 0.08       # greens toward cyan
+green_purity = 0.80
+
+[darktable.bilat]
+detail = 0.10
+
+[darktable.grain]
+strength = 14.0
+coarseness = 1400.0
+
+[darktable.vignette]
+scale = 60.0
+falloff_scale = 80.0
+brightness = -0.45
+saturation = -0.30
+autoratio = 1

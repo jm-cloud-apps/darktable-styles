@@ -77,6 +77,14 @@ MODULES = {
         ("brightness", 1, "f", 0.33), ("amount", 1, "f", 50.0),
     ]),
     "bloom": (1, [("size", 1, "f", 20.0), ("threshold", 1, "f", 90.0), ("strength", 1, "f", 25.0)]),
+    "colorequal": (4, [  # color equalizer; per-hue sat/bright are multipliers, hue shifts in degrees
+        ("threshold", 1, "f", 0.1), ("smoothing_hue", 1, "f", 1.0), ("contrast", 1, "f", 0.0),
+        ("white_level", 1, "f", 1.0), ("chroma_size", 1, "f", 1.5), ("param_size", 1, "f", 1.0),
+        ("use_filter", 1, "i", 1),
+    ] + [(f"{kind}_{hue}", 1, "f", 0.0 if kind == "hue" else 1.0)
+         for kind in ("sat", "hue", "bright")
+         for hue in ("red", "orange", "yellow", "green", "cyan", "blue", "lavender", "magenta")]
+      + [("hue_shift", 1, "f", 0.0)]),
 }
 
 
@@ -163,6 +171,17 @@ def read(path):
             "multi_name_hand_edited": int(g("multi_name_hand_edited") or 0),
         })
     return root.findtext("info/name"), root.findtext("info/description") or "", items
+
+
+def db_insert_items(db, styleid, items):
+    """Same style_items rows darktable's styles import writes (src/common/styles.c)."""
+    for it in items:
+        db.execute("INSERT INTO style_items (styleid, num, module, operation, op_params, enabled,"
+                   " blendop_params, blendop_version, multi_priority, multi_name, multi_name_hand_edited)"
+                   " VALUES (?,?,?,?,?,?,?,?,?,?,?)",
+                   (styleid, it["num"], it["version"], it["op"], it["blob"], it["enabled"], it["blendop"],
+                    it["blendop_version"], it["multi_priority"], it["multi_name"],
+                    it["multi_name_hand_edited"]))
 
 
 def show(path):

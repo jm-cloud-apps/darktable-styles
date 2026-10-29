@@ -1,0 +1,42 @@
+name = "Tram 28"
+look = "Lisbon on 35mm consumer film: golden afternoon warmth, cream highlights, softly faded shadows, punchy tram yellow and red, Atlantic cyan sky, visible grain"
+credit = "House recipe (this repo)"
+
+[darktable.colorbalancergb]
+contrast = 0.08
+global_Y = 0.0015      # slight fade
+chroma_global = 0.03
+saturation_global = 0.05
+shadows_C = 0.015
+shadows_H = 205.0
+midtones_C = 0.02
+midtones_H = 62.0      # golden
+highlights_C = 0.045
+highlights_H = 72.0    # cream
+
+[darktable.colorequal]
+threshold = 0.04
+sat_orange = 1.15      # tram yellow
+hue_orange = 2.0
+bright_orange = 1.03
+sat_red = 1.10
+hue_red = 3.0
+sat_yellow = 0.92
+hue_yellow = -6.0      # consumer-film greens lean yellow
+sat_green = 0.88
+sat_cyan = 1.08
+sat_blue = 0.92
+hue_blue = -9.0        # Atlantic sky toward cyan
+sat_lavender = 0.90
+hue_lavender = -8.0
+
+[darktable.grain]
+strength = 16.0
+coarseness = 1700.0
+
+[darktable.vignette]
+scale = 70.0
+falloff_scale = 75.0
+brightness = -0.18
+saturation = -0.05
+autoratio = 1
