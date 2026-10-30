@@ -1,0 +1,6 @@
+name = "White Border"
+look = "Thin even white border like a print scan; keeps the photo's own shape, so it suits prints and sharing more than Instagram, whose 3:4 grid crops other shapes. Frame only: apply after a look, or as the export module's style"
+credit = "House recipe (this repo)"
+
+[darktable.borders]
+size = 0.03            # constant border: ~1.5% of the long side per edge (~16 px on a 1080 px export)

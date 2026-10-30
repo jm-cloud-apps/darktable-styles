@@ -20,7 +20,8 @@ import dtstyle  # noqa: E402
 REPO = pathlib.Path(__file__).resolve().parent.parent
 ROOT = "A7V"  # style name prefix; flat names (no "|" folders) avoid the 5.6.x quick-menu crash
 GROUPS = {"base": "Base", "fuji": "Fuji", "vintage": "Vintage", "medieval": "Medieval", "horror": "Horror",
-          "castle": "Castle", "portugal": "Portugal", "food": "Food", "bridge": "Bridge", "wildlife": "Wildlife"}
+          "castle": "Castle", "portugal": "Portugal", "food": "Food", "bridge": "Bridge", "wildlife": "Wildlife",
+          "frame": "Frame"}
 
 # --- Fuji setting -> darktable translation (tuned by eye; README "How recipes map") ---
 HIGHLIGHT_STEP = 0.07   # colorbalancergb highlights_Y per Highlight step (+ = brighter/harder)
@@ -39,7 +40,7 @@ B_AXIS = math.radians(-116)  # Fuji "B" axis (blue primary) relative to the red 
 GREY = 0.1845
 
 PIPE_ORDER = ["channelmixerrgb", "primaries", "colorbalancergb", "colorequal", "bilat", "bloom", "grain", "soften",
-              "vignette"]
+              "vignette", "borders"]
 
 
 def wb_tint(wb, shift):
@@ -99,6 +100,8 @@ def translate(recipe, sims):
             vals["scale"] = vals.pop("coarseness") / dtstyle.GRAIN_SCALE_FACTOR
         mods.setdefault(op, {}).update(vals)
     anchor_midtones(cb)
+    if not cb:  # an all-default instance would reset the image's own color balance rgb (e.g. frame-only styles)
+        del mods["colorbalancergb"]
     return mods
 
 

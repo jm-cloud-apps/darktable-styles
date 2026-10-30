@@ -1,0 +1,10 @@
+name = "White Canvas 4:5"
+look = "The whole uncropped photo centered on a white 4:5 canvas (1080x1350), the older Instagram portrait shape; Instagram's 3:4 profile grid trims its side margins. Frame only: apply after a look, or as the export module's style"
+credit = "House recipe (this repo)"
+
+[darktable.borders]
+aspect = 1.25
+aspect_text = "4:5"
+aspect_orient = 1      # portrait canvas whatever the photo's orientation
+size = 0.04            # tight edges: ~2% of the photo's long side (~29 px top/bottom on portrait, ~22 px sides on landscape at 1080x1440)
+basis = 4              # measure on the long side, so portrait photos keep a visible top/bottom border

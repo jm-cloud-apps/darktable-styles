@@ -1,15 +1,18 @@
 # darktable-styles: Sony A7 V + FE 24-70mm f/2.8 GM II
 
-Film-recipe styles for darktable 5.6.2, generated from small TOML recipes. Python 3.11+ stdlib only.
+Film-recipe styles for darktable 5.6.2, generated from small TOML recipes. Python 3.11+ stdlib only, except
+`tools/instagram.py` (Pillow).
 
 ## Map (read top-down, stop when you have enough)
 - `CATALOG.md`: generated index of every style. Read this instead of listing/opening recipes.
-- `recipes/<base|fuji|vintage|medieval|horror|castle|portugal|food|bridge|wildlife>/<slug>.toml`: **source of truth**, one style per file. Schema, add-a-recipe steps and colorequal hue-node gotchas: `recipes/README.md`.
+- `recipes/<base|fuji|vintage|medieval|horror|castle|portugal|food|bridge|wildlife|frame>/<slug>.toml`: **source of truth**, one style per file. Schema, add-a-recipe steps, colorequal hue-node gotchas and frame (borders) fields: `recipes/README.md`.
 - `sims.toml`: Fuji film-simulation base looks shared by recipes.
 - `tools/build.py`: Fuji settings → darktable translation (tuning constants at top), writes outputs.
 - `tools/dtstyle.py`: binary param layouts pinned to darktable 5.6.2, plus a `show` decoder.
 - `tools/verify.py`: renders every style through real darktable-cli in a throwaway config.
 - `tools/install.py`: syncs styles into the user's darktable data.db (darktable must be closed; backs up first).
+- `tools/instagram.py`: exported JPEGs → 1080x1440 Instagram posts (photo with a white border on a zoomed copy of
+  itself). Not a style: darktable can't paint an image behind itself.
 - `styles/*.dtstyle`, `CATALOG.md`: **generated**. Never hand-edit. Don't read `styles/` (hex blobs); use `--show`.
 - `previews/`: verify output (gitignored). The JPEGs are viewable when judging a look.
 
@@ -21,6 +24,7 @@ python3 tools/build.py --check              # exit 1 if outputs are stale
 python3 tools/verify.py --only <substr>     # ~6 s/style; everything ≈ 7 min. --image <raw> for real previews
 python3 tools/dtstyle.py show <file>        # decode any .dtstyle (user exports, downloaded packs)
 python3 tools/install.py --dry-run          # what a sync into the user's darktable would change (safe while open)
+python3 tools/instagram.py [1234]           # NAME_ig.jpg post(s) from today's export folder (EXPORTS; needs Pillow)
 ```
 
 ## Rules

@@ -29,6 +29,19 @@ by rendering it with darktable itself. The full list is in **[CATALOG.md](CATALO
 > on darktable master). These styles use flat names, so they never create folders. darktable's own *darktable › camera styles*
 > folder still can trigger it, so click instead of dragging when you pass over it.
 
+## Instagram posts
+- **White border:** in the export module (*global options*), set **style** to **A7V · Frame · Instagram White Border 3:4**
+  with mode *append*, and the size to **1080 × 1440**. 3:4 is the tallest post shape and the profile grid's tile shape,
+  so the border shows uncut in the feed and the grid on every phone. Your darkroom edit stays border-free.
+- **One export folder per day:** an export path like `/Volumes/T7/$(YEAR)/exports/$(MONTH.SHORT,,)-$(DAY)/$(FILE_NAME)`
+  makes darktable write into today's folder (`2026/exports/oct-30`), creating it if needed. `EXPORTS` at the top of
+  `tools/instagram.py` holds the same pattern; change both together.
+- **Photo as its own background:** export JPEGs without a frame, then run `python3 tools/instagram.py 1234` for just
+  DSC01234 from today's folder, or with no arguments for every photo in it (`--day oct-29` for another day; folders
+  and files work too). Each photo gets a `NAME_ig.jpg` beside it: the photo with a thin white border on a zoomed-in,
+  slightly dimmed copy of itself, at 1080 × 1440. Tune with `--dim`, `--margin`, `--border`, or `--blur 30` for a
+  blurred background. Needs Pillow (`python3 -m pip install Pillow`).
+
 ## What the styles assume
 - **Scene-referred workflow (AgX or sigmoid).** The styles never touch the tone mapper, exposure, white balance,
   lens correction, denoise or sharpening, so they stack on top of your normal per-image edit.
@@ -78,7 +91,8 @@ python3 tools/build.py                        # recipes → styles/ + CATALOG.md
 python3 tools/verify.py                       # render every style with darktable-cli → previews/index.html
 python3 tools/verify.py --image ~/path/DSC00502.ARW   # previews on one of your own raws
 ```
-Python 3.11+ with no dependencies. Add a recipe by following [recipes/README.md](recipes/README.md).
+Python 3.11+ with no dependencies (only `tools/instagram.py` needs Pillow). Add a recipe by following
+[recipes/README.md](recipes/README.md).
 AI agents should start at [CLAUDE.md](CLAUDE.md).
 
 ## Credits

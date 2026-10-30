@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<darktable_style version="1.0">
+<info><name>A7V · Frame · Instagram White Border 3:4</name><description>Use this one for Instagram: the whole uncropped photo on a white 3:4 canvas, the shape both the feed and the profile grid show uncut on every phone. Export 1080x1440. Frame only: apply after a look, or as the export module's style. Recipe: House recipe (this repo).</description></info>
+<style>
+<plugin><num>0</num><module>4</module><operation>borders</operation><op_params>0000803f0000803f0000803faaaaaa3f333a340000000000000000000000000000000000010000000ad7233d0000003f312f3200000000000000000000000000000000000000003f312f320000000000000000000000000000000000000000000000003f0000000000000000000000000100000004000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+</style>
+</darktable_style>

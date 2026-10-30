@@ -1,0 +1,10 @@
+name = "Instagram White Border 3:4"
+look = "Use this one for Instagram: the whole uncropped photo on a white 3:4 canvas, the shape both the feed and the profile grid show uncut on every phone. Export 1080x1440. Frame only: apply after a look, or as the export module's style"
+credit = "House recipe (this repo)"
+
+[darktable.borders]
+aspect = 1.3333333
+aspect_text = "3:4"
+aspect_orient = 1      # portrait canvas whatever the photo's orientation
+size = 0.04            # tight edges: ~2% of the photo's long side (~29 px top/bottom on portrait, ~22 px sides on landscape at 1080x1440)
+basis = 4              # measure on the long side, so portrait photos keep a visible top/bottom border

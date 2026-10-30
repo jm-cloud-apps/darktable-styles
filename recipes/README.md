@@ -2,7 +2,7 @@
 
 One file = one darktable style. Folder = group in darktable (`base` → Base, `fuji` → Fuji, `vintage` → Vintage,
 `medieval` → Medieval, `horror` → Horror, `castle` → Castle, `portugal` → Portugal, `food` → Food, `bridge` → Bridge,
-`wildlife` → Wildlife). A new folder needs an entry in `GROUPS` in tools/build.py.
+`wildlife` → Wildlife, `frame` → Frame). A new folder needs an entry in `GROUPS` in tools/build.py.
 
 ```toml
 name = "Classic Cuban Neg"            # shown in darktable as Sony A7 V › Fuji Recipes › Classic Cuban Neg
@@ -43,6 +43,16 @@ hue_green = -10.0                      # hue_* shifts in degrees
 - The default `threshold = 0.1` damps bright yellows, greens and cyans by 30–45% (they are low-saturation to this
   module). Use `threshold = 0.04` (or lower) when a recipe needs to move them.
 - `hue_*`: + rotates red → orange → yellow → green → cyan → blue → lavender → magenta.
+
+### Frame styles (`[darktable.borders]`, darktable's framing module)
+- Frame recipes contain only `borders`. A recipe without colorbalancergb fields leaves that module out, so a frame
+  stacked on a look (styles applied in append mode) never resets the look's color.
+- To frame only the exports, pick the frame style in the export module's style option (mode: append).
+- A photo on a zoomed copy of itself can't be a style (framing fills one solid color; the overlay module is tied to
+  one specific image). `tools/instagram.py` builds that layout from exported JPEGs.
+- `aspect` is the outer frame's w/h (≥ 1, e.g. 1.25 = 4:5); -1 = constant border around the photo's own shape.
+  `aspect_orient` 1 = portrait canvas for any photo. `size` = border width relative to the basis side
+  (constant borders: longer side; canvases: width). `frame_size`/`frame_color` add a keyline inside the border.
 
 ## Add a recipe
 1. Copy a sibling file to `recipes/<group>/<slug>.toml` and fill it in.
