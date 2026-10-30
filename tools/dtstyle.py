@@ -2,9 +2,9 @@
 """Encode/decode darktable .dtstyle files.
 
 Module parameter layouts are pinned to darktable 5.6.2 (src/iop/*.c,
-DT_MODULE_INTROSPECTION). Every field is 4 bytes (float, int, enum or
-gboolean), little-endian, no padding. If darktable bumps a module version,
-update its entry here and run tools/verify.py.
+DT_MODULE_INTROSPECTION). Fields are 4 bytes (float, int, enum or gboolean)
+or fixed char arrays, little-endian, no padding. If darktable bumps a module
+version, update its entry here and run tools/verify.py.
 
 CLI:  python3 tools/dtstyle.py show <file.dtstyle>   # readable dump of any style
 """
@@ -18,7 +18,8 @@ from xml.sax.saxutils import escape
 DARKTABLE_VERSION = "5.6.2"
 GRAIN_SCALE_FACTOR = 213.2  # src/iop/grain.c
 
-# op -> (module version, [(field, count, type, default)]); type: f=float, i=int/enum/gboolean
+# op -> (module version, [(field, count, type, default)]); type: f=float, i=int/enum/gboolean,
+# s=char[count] string
 MODULES = {
     "colorbalancergb": (5, [
         ("shadows_Y", 1, "f", 0.0), ("shadows_C", 1, "f", 0.0), ("shadows_H", 1, "f", 0.0),
@@ -85,6 +86,19 @@ MODULES = {
          for kind in ("sat", "hue", "bright")
          for hue in ("red", "orange", "yellow", "green", "cyan", "blue", "lavender", "magenta")]
       + [("hue_shift", 1, "f", 0.0)]),
+    "borders": (4, [  # framing; the *_text fields are unused by darktable
+        ("color", 3, "f", [1.0, 1.0, 1.0]),
+        ("aspect", 1, "f", -1.0),  # outer frame w/h >= 1; -1 = constant border, 0 = image aspect
+        ("aspect_text", 20, "s", "constant border"),
+        ("aspect_orient", 1, "i", 0),  # 0=auto (follow the photo), 1=portrait, 2=landscape
+        ("size", 1, "f", 0.1),  # border width relative to the basis side
+        ("pos_h", 1, "f", 0.5), ("pos_h_text", 20, "s", "1/2"),
+        ("pos_v", 1, "f", 0.5), ("pos_v_text", 20, "s", "1/2"),
+        ("frame_size", 1, "f", 0.0), ("frame_offset", 1, "f", 0.5),  # line inside the border
+        ("frame_color", 3, "f", [0.0, 0.0, 0.0]),
+        ("max_border_size", 1, "i", 1),
+        ("basis", 1, "i", 0),  # side the size is measured on: 0=auto (constant: longer, canvas: width), 4=longer
+    ]),
 }
 
 
@@ -97,7 +111,7 @@ def params_size(op):
 
 
 def defaults(op):
-    return {f: (list(d) if n > 1 else d) for f, n, _, d in MODULES[op][1]}
+    return {f: (list(d) if n > 1 and t != "s" else d) for f, n, t, d in MODULES[op][1]}
 
 
 def encode(op, values):
@@ -109,6 +123,12 @@ def encode(op, values):
     flat = []
     for f, n, t, d in fields:
         v = values.get(f, d)
+        if t == "s":
+            b = str(v).encode()
+            if len(b) >= n:  # keep the C string NUL-terminated
+                raise ValueError(f"{op}.{f}: longer than {n - 1} bytes")
+            flat.append(b)
+            continue
         vs = list(v) if n > 1 else [v]
         if len(vs) != n:
             raise ValueError(f"{op}.{f}: expected {n} values")
@@ -127,7 +147,11 @@ def decode_blob(text):
 def decode(op, blob):
     vals = struct.unpack(_fmt(op), blob)
     out, i = {}, 0
-    for f, n, _, _ in MODULES[op][1]:
+    for f, n, t, _ in MODULES[op][1]:
+        if t == "s":  # one struct item per char array
+            out[f] = vals[i].split(b"\0", 1)[0].decode(errors="replace")
+            i += 1
+            continue
         out[f] = list(vals[i:i + n]) if n > 1 else vals[i]
         i += n
     return out

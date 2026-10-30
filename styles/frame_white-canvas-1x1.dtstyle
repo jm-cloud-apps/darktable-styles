@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<darktable_style version="1.0">
+<info><name>A7V · Frame · White Canvas 1:1</name><description>The whole uncropped photo centered on a white square canvas (1080x1080); Instagram's 3:4 profile grid crops its sides. Frame only: apply after a look, or as the export module's style. Recipe: House recipe (this repo).</description></info>
+<style>
+<plugin><num>0</num><module>4</module><operation>borders</operation><op_params>0000803f0000803f0000803f0000803f313a310000000000000000000000000000000000000000000ad7233d0000003f312f3200000000000000000000000000000000000000003f312f320000000000000000000000000000000000000000000000003f0000000000000000000000000100000004000000</op_params><enabled>1</enabled><blendop_params></blendop_params><blendop_version>14</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name><multi_name_hand_edited>0</multi_name_hand_edited></plugin>
+</style>
+</darktable_style>
